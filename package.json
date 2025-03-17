@@ -17,5 +17,8 @@
     "gradient-string": "^3.0.0",
     "inquirer": "^12.5.0",
     "nanospinner": "^1.2.2"
+  },
+  "bin": {
+    "cliproject": "index.js"
   }
 }
