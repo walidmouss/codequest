@@ -67,12 +67,20 @@ async function loadProblem(){
         const file = await readFile(filePath, 'utf-8');
         const problems = JSON.parse(file);
         if (problems.length == 0){
-            console.log(chalk.yellow("There is no problems in database"));
+            console.log(chalk.yellow("There is no unsolved problems in database"));
             return;
         }
         const unsolvedProbs = await problems.filter(p => !p.solved);
-        const rand = Math.floor(Math.random() * unsolvedProbs.length);
-        console.log(unsolvedProbs);
+        var i = 0;
+        while(i<unsolvedProbs.length){
+            console.log(chalk.blue("ID:         "), unsolvedProbs[i].id);
+            console.log(chalk.magenta("Title:      "), unsolvedProbs[i].title);
+            console.log(chalk.cyan("Difficulty: "), unsolvedProbs[i].difficulty);
+            console.log(chalk.green("URL:        "), unsolvedProbs[i].url);
+            console.log("\n---------------------------------------------");
+            i++;
+        }
+        ask();
     }
     catch(error){
         console.error(chalk.red("error getting file: ", error));
@@ -87,23 +95,36 @@ async function addProblem(){
         const problems = JSON.parse(file);
         
         const newProblem = await axios.get("http://localhost:3000/randProblem");
-        console.log("the new problem is :", newProblem.data);
+        console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
+        console.log("ID:         " , newProblem.data.id);
+        console.log("Title:      " , newProblem.data.title);
+        console.log("Difficulty: " , newProblem.data.difficulty);
+        console.log("URL         " , newProblem.data.url);
+        console.log("\n");
         const attempt = await inquirer.prompt(questions[2])
-        console.log(attempt);
         if(attempt.attempt_request == "Yes" ){
             console.log(chalk.green("Great ... problem marked as attempting"))
             problems.push(newProblem.data);
             await writeFile(filePath, JSON.stringify(problems, null, 2));
+
+            
+            console.log(chalk.green("🌐 Redirecting you to Codeforces... ")) 
             await goToLink(newProblem.data.url);
         }
         else{
             const sure = await inquirer.prompt(questions[3])
             if(sure.anotherOne == "Yes"){
+                console.log(chalk.bold(chalk.yellow("\nHere is another recommended problem:")));
                 const newProblem = await axios.get("http://localhost:3000/randProblem");
-                console.log("the new problem is :", newProblem.data);
+                console.log("ID:         " , newProblem.data.id);
+                console.log("Title:      " , newProblem.data.title);
+                console.log("Difficulty: " , newProblem.data.Difficulty);
+                console.log("URL         " , newProblem.data.url);
+                console.log("\n");
                 const attempt = await inquirer.prompt(questions[2])
                 if(attempt.attempt_request == "Yes" ){
                     console.log(chalk.green("Great ... problem marked as attempting"))
+                    console.log(chalk.green("🌐 Redirecting you to Codeforces... ")) 
                     problems.push(newProblem.data);
                     await writeFile(filePath, JSON.stringify(problems, null, 2));
                     await goToLink(newProblem.data.url);
@@ -141,7 +162,8 @@ async function solved (){
         }
         temp.solved = true;
         await writeFile(filePath, JSON.stringify(problem, null, 2));
-        console.log(chalk.green(`Problem ${probid} marked as solved! ✅`));
+        console.log(chalk.green(`Problem ${probid} marked as solved! ✅\n`));
+        ask();
     }
     catch(error){
         console.log("error finding file : ", error);

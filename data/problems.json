@@ -54,5 +54,68 @@
     "difficulty": "Easy",
     "url": "https://codeforces.com/contest/1104/problem/B",
     "solved": false
+  },
+  {
+    "id": "2005-B1",
+    "title": "The Strict Teacher (Easy Version)",
+    "difficulty": "Easy",
+    "url": "https://codeforces.com/contest/2005/problem/B1",
+    "solved": false
+  },
+  {
+    "id": "837-D",
+    "title": "Round Subset",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/837/problem/D",
+    "solved": false
+  },
+  {
+    "id": "162-J",
+    "title": "Brackets",
+    "difficulty": "Medium",
+    "url": "https://codeforces.com/contest/162/problem/J",
+    "solved": false
+  },
+  {
+    "id": "1027-D",
+    "title": "Mouse Hunt",
+    "difficulty": "Medium",
+    "url": "https://codeforces.com/contest/1027/problem/D",
+    "solved": false
+  },
+  {
+    "id": "2038-D",
+    "title": "Divide OR Conquer",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/2038/problem/D",
+    "solved": false
+  },
+  {
+    "id": "566-C",
+    "title": "Logistical Questions",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/566/problem/C",
+    "solved": false
+  },
+  {
+    "id": "847-K",
+    "title": "Travel Cards",
+    "difficulty": "Medium",
+    "url": "https://codeforces.com/contest/847/problem/K",
+    "solved": false
+  },
+  {
+    "id": "710-E",
+    "title": "Generate a String",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/710/problem/E",
+    "solved": false
+  },
+  {
+    "id": "1333-E",
+    "title": "Road to 1600",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/1333/problem/E",
+    "solved": true
   }
 ]
