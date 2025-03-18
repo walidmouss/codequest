@@ -6,6 +6,7 @@ import chalk from 'chalk';
 import chalkAnimation from 'chalk-animation';
 import gradient from 'gradient-string';
 import { json } from 'stream/consumers';
+import axios from 'axios';
 
 const questions = [
     {
@@ -33,7 +34,7 @@ const filePath = './data/problems.json';
 
 async function loadProblem(){
     try{
-        
+        /*
         const file = await readFile(filePath, 'utf-8');
         const problems = JSON.parse(file);
         if (problems.length == 0){
@@ -41,10 +42,27 @@ async function loadProblem(){
             return;
         }
         const rand = Math.floor(Math.random() * problems.length);
-        console.log(problems[rand]);
+        console.log(problems[rand]);*/
+        addProblem();
     }
     catch(error){
         console.error(chalk.red("error getting file: ", error));
+    }
+}
+
+async function addProblem(){
+    try{
+        const file = await readFile(filePath, 'utf-8');
+        const problems = JSON.parse(file);
+        
+        const newProblem = await axios.get("http://localhost:3000/randProblem");
+        
+        console.log("the new problem is :", newProblem.data);
+        problems.push(newProblem.data);
+        await writeFile(filePath, JSON.stringify(problems, null, 2));
+    }
+    catch(error){
+        console.log("error adding new problem : " + error);
     }
 }
 
@@ -70,6 +88,27 @@ async function solved (){
     }
 }
 
+
+async function progress(){
+    try{
+    const file = await readFile(filePath, 'utf-8');
+    const problems = JSON.parse(file);
+    if (problems.length === 0) {
+        console.log(chalk.red("No problems found."));
+        return;
+    }
+    const solvedCount = await problems.filter(p => p.solved).length;
+    const unsolvedCount = problems.length - solvedCount ;
+
+    console.log(`📊 Progress Report:  
+        ✅ Solved:   ${solvedCount}  
+        ❌ Unsolved: ${unsolvedCount}`);
+    
+    } catch (error) {
+        console.error(chalk.red("Error reading file:", error));
+    }
+}
+
 async function ask(){
     const answer = await inquirer.prompt(questions[0]);
     //console.log(`${answer.initial_question}`);
@@ -83,6 +122,9 @@ async function ask(){
     }
     else if(answer.initial_question == "get-problem -> Fetch a new problem"){
         await loadProblem();
+    }
+    else if(answer.initial_question == "progress    -> View your progress"){
+        await progress();
     }
 }
 
