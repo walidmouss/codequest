@@ -44,6 +44,17 @@ const questions = [
             "Yes",
             "No"
         ]
+    },
+    {
+        type : 'list',
+        name : 'editRecommendations',
+        message : "🤔 Why are you skipping problems?(we're asking you this in order to refine our recommendation system)",
+        choices:[
+            "Too difficult",
+            "Not interested in this topic",
+            "Already solved a similar problem",
+            "Other"
+        ]
     }
 ]
 
@@ -98,10 +109,10 @@ async function addProblem(){
                     await goToLink(newProblem.data.url);
                 }
                 else{
-                    console.log("why do you not like our recommendations ? ")
+                    const skip = await inquirer.prompt(questions[4])
                 }
             }
-            while(sure.anotherOne == "No"){
+            if(sure.anotherOne == "No"){
                 ask();
             }
         }

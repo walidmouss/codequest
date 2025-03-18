@@ -40,5 +40,19 @@
     "difficulty": "Hard",
     "url": "https://codeforces.com/contest/1065/problem/G",
     "solved": false
+  },
+  {
+    "id": "276-E",
+    "title": "Little Girl and Problem on Trees",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/276/problem/E",
+    "solved": false
+  },
+  {
+    "id": "1104-B",
+    "title": "Game with string",
+    "difficulty": "Easy",
+    "url": "https://codeforces.com/contest/1104/problem/B",
+    "solved": false
   }
 ]
