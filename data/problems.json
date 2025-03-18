@@ -4,13 +4,41 @@
     "title": "Disjoint Triangles",
     "difficulty": "Hard",
     "url": "https://codeforces.com/contest/1025/problem/F",
-    "solved": false
+    "solved": true
   },
   {
     "id": "1537-D",
     "title": "Deleting Divisors",
     "difficulty": "Medium",
     "url": "https://codeforces.com/contest/1537/problem/D",
-    "solved": false 
+    "solved": true
+  },
+  {
+    "id": "226-A",
+    "title": "Flying Saucer Segments",
+    "difficulty": "Easy",
+    "url": "https://codeforces.com/contest/226/problem/A",
+    "solved": false
+  },
+  {
+    "id": "1209-D",
+    "title": "Cow and Snacks",
+    "difficulty": "Medium",
+    "url": "https://codeforces.com/contest/1209/problem/D",
+    "solved": false
+  },
+  {
+    "id": "1221-E",
+    "title": "Game With String",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/1221/problem/E",
+    "solved": false
+  },
+  {
+    "id": "1065-G",
+    "title": "Fibonacci Suffix",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/1065/problem/G",
+    "solved": false
   }
 ]
