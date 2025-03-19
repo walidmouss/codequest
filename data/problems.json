@@ -7,115 +7,38 @@
     "solved": true
   },
   {
-    "id": "1537-D",
-    "title": "Deleting Divisors",
-    "difficulty": "Medium",
-    "url": "https://codeforces.com/contest/1537/problem/D",
-    "solved": true
-  },
-  {
-    "id": "226-A",
-    "title": "Flying Saucer Segments",
-    "difficulty": "Easy",
-    "url": "https://codeforces.com/contest/226/problem/A",
-    "solved": false
-  },
-  {
-    "id": "1209-D",
-    "title": "Cow and Snacks",
-    "difficulty": "Medium",
-    "url": "https://codeforces.com/contest/1209/problem/D",
-    "solved": false
-  },
-  {
-    "id": "1221-E",
-    "title": "Game With String",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/1221/problem/E",
-    "solved": false
-  },
-  {
-    "id": "1065-G",
-    "title": "Fibonacci Suffix",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/1065/problem/G",
-    "solved": false
-  },
-  {
-    "id": "276-E",
-    "title": "Little Girl and Problem on Trees",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/276/problem/E",
-    "solved": false
-  },
-  {
-    "id": "1104-B",
-    "title": "Game with string",
-    "difficulty": "Easy",
-    "url": "https://codeforces.com/contest/1104/problem/B",
-    "solved": false
-  },
-  {
-    "id": "2005-B1",
-    "title": "The Strict Teacher (Easy Version)",
-    "difficulty": "Easy",
-    "url": "https://codeforces.com/contest/2005/problem/B1",
-    "solved": false
-  },
-  {
-    "id": "837-D",
-    "title": "Round Subset",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/837/problem/D",
-    "solved": false
-  },
-  {
-    "id": "162-J",
-    "title": "Brackets",
-    "difficulty": "Medium",
-    "url": "https://codeforces.com/contest/162/problem/J",
-    "solved": false
-  },
-  {
-    "id": "1027-D",
-    "title": "Mouse Hunt",
-    "difficulty": "Medium",
-    "url": "https://codeforces.com/contest/1027/problem/D",
-    "solved": false
-  },
-  {
-    "id": "2038-D",
-    "title": "Divide OR Conquer",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/2038/problem/D",
-    "solved": false
-  },
-  {
-    "id": "566-C",
-    "title": "Logistical Questions",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/566/problem/C",
-    "solved": false
-  },
-  {
-    "id": "847-K",
-    "title": "Travel Cards",
-    "difficulty": "Medium",
-    "url": "https://codeforces.com/contest/847/problem/K",
-    "solved": false
-  },
-  {
-    "id": "710-E",
-    "title": "Generate a String",
-    "difficulty": "Hard",
-    "url": "https://codeforces.com/contest/710/problem/E",
-    "solved": false
-  },
-  {
     "id": "1333-E",
     "title": "Road to 1600",
     "difficulty": "Hard",
     "url": "https://codeforces.com/contest/1333/problem/E",
     "solved": true
+  },
+  {
+    "id": "1674-G",
+    "title": "Remove Directed Edges",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/1674/problem/G",
+    "solved": true
+  },
+  {
+    "id": "524-E",
+    "title": "Rooks and Rectangles",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/524/problem/E",
+    "topics": [
+      "data structures",
+      "sortings"
+    ],
+    "solved": true
+  },
+  {
+    "id": "1912-C",
+    "title": "Cactus Transformation",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/1912/problem/C",
+    "topics": [
+      "constructive algorithms"
+    ],
+    "solved": false
   }
 ]

@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
     "axios": "^1.8.3",
     "chalk": "^5.4.1",
     "chalk-animation": "^2.0.3",
