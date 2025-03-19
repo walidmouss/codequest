@@ -29,7 +29,7 @@
       "data structures",
       "sortings"
     ],
-    "solved": true
+    "solved": false
   },
   {
     "id": "1912-C",
@@ -40,5 +40,83 @@
       "constructive algorithms"
     ],
     "solved": false
+  },
+  {
+    "id": "1974-A",
+    "title": "Phone Desktop",
+    "difficulty": "Easy",
+    "url": "https://codeforces.com/contest/1974/problem/A",
+    "topics": [
+      "greedy",
+      "math"
+    ],
+    "solved": true,
+    "solvedAt": 1742405881846
+  },
+  {
+    "id": "1305-C",
+    "title": "Kuroni and Impossible Calculation",
+    "difficulty": "Medium",
+    "url": "https://codeforces.com/contest/1305/problem/C",
+    "topics": [
+      "brute force",
+      "combinatorics",
+      "math",
+      "number theory"
+    ],
+    "solved": false,
+    "solvedAt": 1742413725970
+  },
+  {
+    "id": "1774-A",
+    "title": "Add Plus Minus Sign",
+    "difficulty": "Easy",
+    "url": "https://codeforces.com/contest/1774/problem/A",
+    "topics": [
+      "constructive algorithms",
+      "math"
+    ],
+    "solved": true,
+    "solvedAt": 1742414024240
+  },
+  {
+    "id": "2002-F2",
+    "title": "Court Blue (Hard Version)",
+    "difficulty": "Hard",
+    "url": "https://codeforces.com/contest/2002/problem/F2",
+    "topics": [
+      "brute force",
+      "dp",
+      "math",
+      "number theory"
+    ],
+    "solved": true,
+    "solvedAt": 1742414064019
+  },
+  {
+    "id": "1660-A",
+    "title": "Vasya and Coins",
+    "difficulty": "Easy",
+    "url": "https://codeforces.com/contest/1660/problem/A",
+    "topics": [
+      "greedy",
+      "math"
+    ],
+    "solved": true,
+    "solvedAt": 1742414116139
+  },
+  {
+    "id": "1172-B",
+    "title": "Nauuo and Circle",
+    "difficulty": "Medium",
+    "url": "https://codeforces.com/contest/1172/problem/B",
+    "topics": [
+      "combinatorics",
+      "dfs and similar",
+      "dp",
+      "trees"
+    ],
+    "solved": true,
+    "solvedAt": 1742414213051
   }
 ]

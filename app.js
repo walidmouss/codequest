@@ -19,7 +19,8 @@ app.get("/randProblem" , async (req,res) =>{
                 : "Unknown",
             url: `https://codeforces.com/contest/${currentProblem.contestId}/problem/${currentProblem.index}`,
             topics :currentProblem.tags ,
-            solved: false
+            solved: false,
+            solvedAt : null
         };
         res.json(formattedProblem);
 

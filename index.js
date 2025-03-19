@@ -81,6 +81,7 @@ const questions = [
 ]
 
 const filePath = './data/problems.json';
+const ProgressPath = './data/progress.json'
 
 // reads json file from data folder to get problems
 
@@ -181,10 +182,18 @@ async function addProblem(){
 
 async function solved (){
     try{
+        // read and parse problems.json
         const file = await readFile(filePath , 'utf-8');
         const problem = JSON.parse(file);
+
+        // read and parse progress.json
+        const file2 = await readFile(ProgressPath , 'utf-8');
+        const progress = JSON.parse(file2);
+
         console.log(chalk.underline(chalk.grey("note that the last problem id attempted was :" , problem[problem.length-1].id)));
         console.log(chalk.magenta("To exit type 'exit' "));
+        
+        // what problem do you want to mark as solved
         const answer = await inquirer.prompt(questions[1]);
         const probid = answer.solved_mark  ;
         const temp = await problem.find(p => p.id == answer.solved_mark);
@@ -196,10 +205,32 @@ async function solved (){
             ask();
             return;
         }
-        temp.solved = true;
-        await writeFile(filePath, JSON.stringify(problem, null, 2));
-        console.log(chalk.green(`Problem ${probid} marked as solved! ✅\n`));
-        ask();
+        if(temp.solved == true){
+            console.log(chalk.green("you have already solved this problem ^_^ "))
+            ask()
+        }
+        else{
+            //mark changes in progress
+            progress.totalSolved ++;
+            temp.topics.forEach(topic => {
+                if(progress.topicsSolved[topic]){
+                    progress.topicsSolved[topic]++;
+                } else {
+                    progress.topicsSolved[topic] = 1;
+                }
+            });
+            temp.solved = true;
+            temp.solvedAt = Date.now();
+
+            progress.difficultyCount[temp.difficulty]++;
+
+            // write changes to json files
+            await writeFile(filePath, JSON.stringify(problem, null, 2));
+            await writeFile(ProgressPath , JSON.stringify(progress , null , 2));
+            console.log(chalk.green(`Problem ${probid} marked as solved! ✅\n`));
+            ask();
+        }
+            
     }
     catch(error){
         console.log("error finding file : ", error);

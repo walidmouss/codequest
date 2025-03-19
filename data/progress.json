@@ -1,0 +1,21 @@
+{
+  "totalSolved": 10,
+  "difficultyCount": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 1,
+    "undefined": 0
+  },
+  "topicsSolved": {
+    "brute force": 3,
+    "combinatorics": 3,
+    "math": 5,
+    "number theory": 3,
+    "constructive algorithms": 1,
+    "dp": 2,
+    "greedy": 1,
+    "dfs and similar": 1,
+    "trees": 1
+  }
+}
+  
