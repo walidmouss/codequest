@@ -1,21 +1,25 @@
 {
-  "totalSolved": 10,
+  "totalSolved": 5,
   "difficultyCount": {
     "Easy": 1,
-    "Medium": 2,
-    "Hard": 1,
+    "Medium": 0,
+    "Hard": 4,
     "undefined": 0
   },
   "topicsSolved": {
-    "brute force": 3,
-    "combinatorics": 3,
-    "math": 5,
-    "number theory": 3,
-    "constructive algorithms": 1,
+    "binary search": 1,
+    "data structures": 2,
+    "sortings": 1,
+    "combinatorics": 1,
     "dp": 2,
-    "greedy": 1,
-    "dfs and similar": 1,
-    "trees": 1
+    "implementation": 1,
+    "math": 1,
+    "ternary search": 1,
+    "brute force": 1,
+    "graphs": 1,
+    "greedy": 2,
+    "hashing": 1,
+    "*special": 1,
+    "constructive algorithms": 1
   }
 }
-  
