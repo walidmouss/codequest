@@ -118,5 +118,21 @@
     ],
     "solved": true,
     "solvedAt": 1742414213051
+  },
+  {
+    "id": "818-E",
+    "title": "Card Game Again",
+    "difficulty": "Medium",
+    "rating": 1900,
+    "url": "https://codeforces.com/contest/818/problem/E",
+    "topics": [
+      "binary search",
+      "data structures",
+      "number theory",
+      "two pointers"
+    ],
+    "solved": false,
+    "solvedCount": 2357,
+    "solvedAt": null
   }
 ]
