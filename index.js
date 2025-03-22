@@ -77,6 +77,12 @@ const questions = [
         ]
         
 
+    },
+    {
+        type : 'text',
+        name : 'login',
+        message : "Please enter your codeforces handler ... if you don't have a codeforces account please create one"
+
     }
 ]
 
@@ -85,6 +91,23 @@ const ProgressPath = './data/progress.json'
 
 // reads json file from data folder to get problems
 
+async function login(){
+    const ans = await inquirer.prompt(questions[7])
+    const handler = ans.login
+    console.log("Sending handler:", handler);
+    fetch("http://localhost:3000/userDetails", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ handler })
+    })
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        console.log(" Response:", data);
+    })
+    .catch(error => console.error("Error:", error));
+}
 async function loadProblem(){
     try{
         const file = await readFile(filePath, 'utf-8');
@@ -296,4 +319,4 @@ async function ask(){
 console.log(chalk.green('Welcome to CodeClimber CLI! 🚀 \nYour coding practice companion.'));
 console.log(chalk.magenta("\ncommands:"));
 
-ask()
+login()

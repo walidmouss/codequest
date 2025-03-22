@@ -1,5 +1,7 @@
 import axios from "axios";
 import express from "express";
+import { readFile , writeFile  } from 'fs/promises';
+
 
 const app = express();
 app.use(express.json());
@@ -47,6 +49,55 @@ app.get("/randProblem" , async (req,res) =>{
         res.status(500).json({error: "Failed to fetch problems", details: error.response ? error.response.data : error.message});
     }
 })
+app.post("/userDetails", async (req, res) => {
+    const { handler } = req.body;
+    const ProgressPath = './data/progress.json'
+    const file2 = await readFile(ProgressPath , 'utf-8');
+    const progress = JSON.parse(file2);
+
+    try {
+        const response = await axios.get(
+            `https://codeforces.com/api/user.status?handle=${handler}`
+        );
+
+        const problems = response.data.result;
+        var probRating = 0
+        var problemCount = 0
+        problems.forEach(question => {
+            if(question.verdict == "OK" || question.verdict == "PARTIAL" ){
+                if (question.problem.rating) { 
+                    if(question.problem.rating <1600){
+                        progress.difficultyCount["Easy"]++
+                    }else if(question.problem.rating <2000){
+                        progress.difficultyCount["Medium"]++
+                    }else{
+                        progress.difficultyCount["Hard"]++
+                    }
+                    probRating += question.problem.rating;
+                    problemCount ++
+                }else{
+                    progress.difficultyCount["undefined"]++
+
+                }
+                progress.totalSolved ++;
+                question.problem.tags.forEach(topic => {
+                    if(progress.topicsSolved[topic]){
+                        progress.topicsSolved[topic]++;
+                    } else {
+                        progress.topicsSolved[topic] = 1;
+                    }
+                });
+            }
+        });
+
+        var avgCount = probRating / problemCount
+        await writeFile(ProgressPath , JSON.stringify(progress , null , 2));
+        res.json({ AverageRating: problemCount }); 
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        res.status(500).json({ error: "Failed to fetch user data" });
+    }
+});
 
 
 app.listen(3000, () => console.log("Server running on port 3000"));
