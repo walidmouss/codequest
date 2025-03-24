@@ -1,8 +1,1 @@
-problem_id,rating,topics,solved,topics skill,easy_solved,medium_solved,hard_solved
-228-C,2000,dp|hashing,0,1.5,1,0,4
-1510-K,1200,brute force|graphs|implementation,0,1,1,0,4
-1542-D,2200,combinatorics|dp|implementation|math|ternary search,1,1.2,1,0,4
-1982-F,2600,binary search|data structures|sortings,1,1.3333333333333333,1,0,4
-1996-G,2200,brute force|data structures|graphs|greedy|hashing,1,1.4,1,0,4
-1958-H,2600,*special|dp,1,1.5,1,0,4
-1957-A,800,constructive algorithms|greedy,1,1.5,1,0,4
+

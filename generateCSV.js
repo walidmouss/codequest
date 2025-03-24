@@ -1,41 +1,68 @@
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 
-let csvData = "problem_id,rating,topics,solved,topics skill,easy_solved,medium_solved,hard_solved\n"; // Header row
+const handlersPath = path.join("./data/handlers.json");
+const progressPath = "./data/progress.json";
+const tempDataPath = "./data/tempData.json";
+const csvPath = "./ml/dataset.csv";
 
-const progressPath = path.join("./data/progress.json");
-const problemsPath = path.join("./data/problems.json");
+// Read data files
+const [handlers, progressFile, tempDataFile] = await Promise.all([
+    fs.readFile(handlersPath, "utf-8"),
+    fs.readFile(progressPath, "utf-8"),
+    fs.readFile(tempDataPath, "utf-8"),
+]);
 
+const handlersList = JSON.parse(handlers);
+const progress = JSON.parse(progressFile);
+const tempData = JSON.parse(tempDataFile);
 
-const progress = JSON.parse(fs.readFileSync(progressPath, "utf-8"));
-const problems = JSON.parse(fs.readFileSync(problemsPath, "utf-8"));
+let csvData = "problem_id,user_handler,rating,topics,solved\n"; // Header row
 
+// Fetch user details and process problems
+for (let i = 0; i < handlersList.length; i++) {
+    let placeHolder = handlersList[i];
+    console.log("Sending handler:", placeHolder);
 
-problems.forEach(problem => {
-    var sumPoints = 0
-    var sumCount = 0
+    try {
+        const response = await fetch("http://localhost:3000/userDetails", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ handler: placeHolder }),
+        });
 
+        const problems = await response.json();
 
-    const probid = problem.id
-    const rating = problem.rating || "undefined"
-    const topics = problem.topics ? problem.topics.join("|") : "unknown";
-    const solved = problem.solved === true ? 1 : 0 
-    problem.topics.forEach(topic =>{
-        if (progress.topicsSolved[topic] !== undefined) {
-            sumPoints += progress.topicsSolved[topic]
-            sumCount += 1
+        for (let j = 0; j < problems.length; j++) {
+            let currentProblem = problems[j];
+            let skillPoints = 0;
+            let topicsCount = 0;
+
+            const entry = {
+                problem_id: currentProblem.id,
+                user_handler: placeHolder,
+                rating: currentProblem.rating,
+                topics: currentProblem.topics,
+                solved: currentProblem.solved,
+            };
+
+            tempData.push(entry);
         }
-    })
-    const topicsSkill = sumCount > 0 ? sumPoints / sumCount : 0
-    const easy = progress.difficultyCount["Easy"];
-    const medium = progress.difficultyCount["Medium"];
-    const hard = progress.difficultyCount["Hard"];
-    csvData += `${probid},${rating},${topics},${solved},${topicsSkill},${easy},${medium},${hard}\n`;
+
+        // Write updated temp data
+        await fs.writeFile(tempDataPath, JSON.stringify(tempData, null, 2));
+
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}
+
+// Convert tempData to CSV format
+tempData.forEach((entry) => {
+    csvData += `${entry.problem_id},${entry.user_handler},${entry.rating},"${entry.topics.join("|")}",${entry.solved}\n`;
 });
 
-
-const writePath = path.join("./ml/dataset.csv");
-
-fs.writeFileSync(writePath, csvData, "utf-8");
+// Write CSV file
+await fs.writeFile(csvPath, csvData, "utf-8");
 
 console.log("✅ CSV file created successfully!");
