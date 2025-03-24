@@ -1,10 +1,19 @@
 import fs from "fs/promises";
 import path from "path";
 
+const csvHeader = "problem_id,user_handler,rating,topics,attempts,solved,topicsSkill,creationTime\n";
+
+
 const handlersPath = path.join("./data/handlers.json");
 const progressPath = "./data/progress.json";
 const tempDataPath = "./data/tempData.json";
 const csvPath = "./ml/dataset.csv";
+await fs.writeFile(csvPath, csvHeader, "utf-8");  // Overwrite old file
+
+function formatCSV(problem) {
+    return `${problem.problem_id},${problem.user_handler},${problem.rating},"${problem.topics.join(";")}",${problem.attempts},${problem.solved},${problem.topicsSkill},${problem.creationTime}\n`;
+}
+
 
 // Read data files
 const [handlers, progressFile, tempDataFile] = await Promise.all([
@@ -13,11 +22,14 @@ const [handlers, progressFile, tempDataFile] = await Promise.all([
     fs.readFile(tempDataPath, "utf-8"),
 ]);
 
+async function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 const handlersList = JSON.parse(handlers);
 const progress = JSON.parse(progressFile);
 const tempData = JSON.parse(tempDataFile);
 
-let csvData = "problem_id,user_handler,rating,topics,topicsSkill,solved\n"; // Header row
 
 // Fetch user details and process problems
 for (let i = 0; i < handlersList.length; i++) {
@@ -69,15 +81,19 @@ for (let i = 0; i < handlersList.length; i++) {
             
             // Compute average skill points for this problem
             problemAttempts[problemId].topicsSkill = topicsCount > 0 ? skillPoints / topicsCount : 0;
+            problemAttempts[problemId].creationTime = currentProblem.creationTime
     
         }
 
-        // Write updated temp data
+        
+        const csvRows = Object.values(problemAttempts).map(formatCSV).join("");
+        await fs.appendFile(csvPath, csvRows, "utf-8");  // Append new rows
 
     } catch (error) {
         console.error("Error fetching data:", error);
     }
 
+    await delay(500); // ⏳ Wait 500ms before the next request
     // Push the final processed data
     tempData.push(...Object.values(problemAttempts));
 
