@@ -1,1 +1,970 @@
-
+problem_id,user_handler,rating,topics,solved
+577-A,Elise,1000,"implementation|number theory",true
+577-C,Elise,1500,"implementation|number theory",false
+577-C,Elise,1500,"implementation|number theory",false
+577-C,Elise,1500,"implementation|number theory",false
+577-C,Elise,1500,"implementation|number theory",false
+577-C,Elise,1500,"implementation|number theory",false
+577-B,Elise,1900,"combinatorics|data structures|dp|two pointers",false
+577-B,Elise,1900,"combinatorics|data structures|dp|two pointers",true
+577-C,Elise,1500,"implementation|number theory",false
+577-C,Elise,1500,"implementation|number theory",true
+574-A,Elise,1200,"greedy|implementation",true
+574-B,Elise,1500,"brute force|dfs and similar|graphs|hashing",true
+574-C,Elise,1300,"math|number theory",true
+574-D,Elise,1600,"data structures|dp|math|shortest paths",true
+572-A,Elise,900,"sortings",true
+572-B,Elise,1300,"data structures|greedy|implementation|sortings",false
+572-B,Elise,1300,"data structures|greedy|implementation|sortings",true
+572-C,Elise,2100,"brute force|combinatorics|dp|math",true
+574-E,Elise,2300,"constructive algorithms|trees",false
+574-E,Elise,2300,"constructive algorithms|trees",false
+574-E,Elise,2300,"constructive algorithms|trees",false
+574-E,Elise,2300,"constructive algorithms|trees",false
+579-B,Elise,1300,"brute force|implementation|sortings",false
+579-A,Elise,1000,"bitmasks",false
+579-D,Elise,1700,"brute force|greedy|math",false
+579-D,Elise,1700,"brute force|greedy|math",false
+579-D,Elise,1700,"brute force|greedy|math",false
+579-D,Elise,1700,"brute force|greedy|math",false
+579-D,Elise,1700,"brute force|greedy|math",true
+579-E,Elise,2000,"ternary search",false
+579-E,Elise,2000,"ternary search",false
+579-E,Elise,2000,"ternary search",false
+579-E,Elise,2000,"ternary search",false
+579-E,Elise,2000,"ternary search",true
+579-A,Elise,1000,"bitmasks",true
+579-B,Elise,1300,"brute force|implementation|sortings",true
+570-A,Elise,1100,"implementation",true
+570-B,Elise,1300,"constructive algorithms|games|greedy|implementation|math",false
+570-B,Elise,1300,"constructive algorithms|games|greedy|implementation|math",false
+570-B,Elise,1300,"constructive algorithms|games|greedy|implementation|math",true
+580-A,Elise,900,"brute force|dp|implementation",true
+580-B,Elise,1500,"binary search|sortings|two pointers",false
+580-C,Elise,1500,"dfs and similar|graphs|trees",false
+580-C,Elise,1500,"dfs and similar|graphs|trees",false
+580-C,Elise,1500,"dfs and similar|graphs|trees",true
+580-B,Elise,1500,"binary search|sortings|two pointers",true
+569-A,Elise,1500,"implementation|math",true
+569-B,Elise,1200,"greedy|math",true
+569-C,Elise,1600,"binary search|brute force|math|number theory",false
+569-C,Elise,1600,"binary search|brute force|math|number theory",false
+569-C,Elise,1600,"binary search|brute force|math|number theory",true
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",false
+580-E,Elise,2500,"data structures|hashing|strings",true
+567-A,Elise,900,"greedy|implementation",true
+567-B,Elise,1300,"implementation",true
+567-C,Elise,1700,"binary search|data structures|dp",false
+567-C,Elise,1700,"binary search|data structures|dp",false
+567-C,Elise,1700,"binary search|data structures|dp",true
+567-D,Elise,1700,"binary search|data structures|greedy|sortings",true
+560-A,Elise,1000,"implementation|sortings",true
+560-B,Elise,1200,"constructive algorithms|implementation",true
+560-C,Elise,1600,"geometry",false
+560-C,Elise,1600,"geometry",true
+560-D,Elise,1700,"hashing|implementation|strings",false
+560-D,Elise,1700,"hashing|implementation|strings",true
+558-A,Elise,1100,"brute force|implementation|sortings",true
+558-B,Elise,1300,"implementation",false
+558-B,Elise,1300,"implementation",true
+558-C,Elise,1900,"brute force|graphs|greedy|math|shortest paths",false
+558-C,Elise,1900,"brute force|graphs|greedy|math|shortest paths",false
+558-C,Elise,1900,"brute force|graphs|greedy|math|shortest paths",false
+558-C,Elise,1900,"brute force|graphs|greedy|math|shortest paths",true
+558-D,Elise,2300,"data structures|implementation|sortings",false
+558-D,Elise,2300,"data structures|implementation|sortings",false
+558-D,Elise,2300,"data structures|implementation|sortings",false
+558-D,Elise,2300,"data structures|implementation|sortings",false
+581-A,Elise,800,"implementation|math",true
+581-B,Elise,1100,"implementation|math",true
+581-C,Elise,1400,"implementation|math|sortings",false
+581-C,Elise,1400,"implementation|math|sortings",true
+581-D,Elise,1700,"bitmasks|brute force|constructive algorithms|geometry|implementation|math",true
+557-A,Elise,1100,"greedy|implementation|math",false
+557-A,Elise,1100,"greedy|implementation|math",true
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",false
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",false
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",false
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",false
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",false
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",false
+557-B,Elise,1500,"constructive algorithms|implementation|math|sortings",true
+556-A,Elise,900,"greedy",false
+556-A,Elise,900,"greedy",false
+556-A,Elise,900,"greedy",true
+556-B,Elise,1100,"brute force|implementation",true
+556-C,Elise,1500,"implementation",false
+556-C,Elise,1500,"implementation",false
+556-C,Elise,1500,"implementation",true
+556-D,Elise,2000,"binary search|data structures|greedy",false
+556-D,Elise,2000,"binary search|data structures|greedy",false
+556-D,Elise,2000,"binary search|data structures|greedy",false
+583-A,Elise,1000,"implementation",false
+583-A,Elise,1000,"implementation",true
+583-B,Elise,1200,"greedy|implementation",true
+583-C,Elise,1700,"constructive algorithms|number theory",false
+554-B,Elise,1200,"brute force|greedy|strings",true
+554-A,Elise,900,"brute force|math|strings",true
+554-C,Elise,1500,"combinatorics|dp|math",true
+554-D,Elise,1900,"greedy|math",false
+554-D,Elise,1900,"greedy|math",false
+554-D,Elise,1900,"greedy|math",true
+556-D,Elise,2000,"binary search|data structures|greedy",true
+584-B,Elise,1500,"combinatorics",true
+584-A,Elise,1000,"math",true
+584-C,Elise,1700,"constructive algorithms|greedy|strings",false
+584-C,Elise,1700,"constructive algorithms|greedy|strings",false
+584-C,Elise,1700,"constructive algorithms|greedy|strings",false
+584-E,Elise,2300,"constructive algorithms|greedy|math",false
+584-C,Elise,1700,"constructive algorithms|greedy|strings",false
+584-C,Elise,1700,"constructive algorithms|greedy|strings",true
+584-D,Elise,1800,"brute force|math|number theory",true
+584-E,Elise,2300,"constructive algorithms|greedy|math",false
+583-C,Elise,1700,"constructive algorithms|number theory",false
+583-C,Elise,1700,"constructive algorithms|number theory",true
+570-C,Elise,1600,"constructive algorithms|data structures|implementation",true
+570-D,Elise,2200,"binary search|bitmasks|constructive algorithms|dfs and similar|graphs|trees",false
+552-B,Elise,1200,"implementation|math",false
+552-B,Elise,1200,"implementation|math",true
+552-A,Elise,1000,"implementation|math",true
+552-C,Elise,1900,"brute force|dp|greedy|math|meet-in-the-middle|number theory",false
+552-C,Elise,1900,"brute force|dp|greedy|math|meet-in-the-middle|number theory",false
+552-C,Elise,1900,"brute force|dp|greedy|math|meet-in-the-middle|number theory",false
+552-C,Elise,1900,"brute force|dp|greedy|math|meet-in-the-middle|number theory",false
+552-C,Elise,1900,"brute force|dp|greedy|math|meet-in-the-middle|number theory",true
+586-B,Elise,1300,"implementation",true
+586-A,Elise,900,"implementation",true
+586-C,Elise,1800,"implementation",false
+551-B,Elise,1800,"brute force|constructive algorithms|implementation|strings",false
+551-A,Elise,800,"brute force|implementation|sortings",true
+551-B,Elise,1800,"brute force|constructive algorithms|implementation|strings",true
+551-C,Elise,2200,"binary search|greedy",false
+551-C,Elise,2200,"binary search|greedy",false
+586-C,Elise,1800,"implementation",true
+551-C,Elise,2200,"binary search|greedy",false
+551-C,Elise,2200,"binary search|greedy",true
+550-A,Elise,1500,"brute force|dp|greedy|implementation|strings",false
+550-A,Elise,1500,"brute force|dp|greedy|implementation|strings",false
+550-A,Elise,1500,"brute force|dp|greedy|implementation|strings",true
+550-B,Elise,1400,"bitmasks|brute force",false
+550-B,Elise,1400,"bitmasks|brute force",true
+588-A,Elise,900,"greedy",true
+588-B,Elise,1300,"math",true
+588-C,Elise,1500,"",false
+588-C,Elise,1500,"",true
+550-C,Elise,1500,"brute force|dp|math",false
+550-C,Elise,1500,"brute force|dp|math",true
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",false
+547-A,Elise,2200,"brute force|greedy|implementation|math",true
+547-B,Elise,1900,"binary search|data structures|dp|dsu",true
+548-A,Elise,1100,"brute force|implementation|strings",true
+548-B,Elise,1400,"brute force|dp|greedy|implementation",false
+548-B,Elise,1400,"brute force|dp|greedy|implementation",false
+548-B,Elise,1400,"brute force|dp|greedy|implementation",true
+546-A,Elise,800,"brute force|implementation|math",true
+546-B,Elise,1200,"brute force|greedy|implementation|sortings",true
+546-C,Elise,1400,"brute force|dfs and similar|games",true
+546-C,Elise,1400,"brute force|dfs and similar|games",true
+546-D,Elise,1700,"constructive algorithms|dp|math|number theory",false
+546-D,Elise,1700,"constructive algorithms|dp|math|number theory",true
+545-A,Elise,900,"implementation",true
+545-B,Elise,1100,"greedy",true
+545-C,Elise,1500,"dp|greedy",true
+545-D,Elise,1300,"greedy|implementation|sortings",true
+544-A,Elise,1100,"implementation|strings",false
+544-A,Elise,1100,"implementation|strings",true
+544-B,Elise,1400,"constructive algorithms|implementation",true
+544-C,Elise,1800,"dp",false
+544-C,Elise,1800,"dp",false
+544-C,Elise,1800,"dp",true
+591-A,Elise,900,"implementation|math",true
+591-B,Elise,1200,"implementation|strings",true
+591-C,Elise,1700,"constructive algorithms|implementation",true
+591-D,Elise,2100,"geometry",false
+591-D,Elise,2100,"geometry",false
+591-D,Elise,2100,"geometry",false
+591-D,Elise,2100,"geometry",false
+591-D,Elise,2100,"geometry",false
+591-D,Elise,2100,"geometry",true
+540-A,Elise,800,"implementation",true
+540-B,Elise,1700,"greedy|implementation",true
+540-C,Elise,2000,"dfs and similar",false
+540-C,Elise,2000,"dfs and similar",false
+540-C,Elise,2000,"dfs and similar",true
+540-D,Elise,1900,"dp|probabilities",true
+538-A,Elise,1400,"brute force|implementation",false
+538-A,Elise,1400,"brute force|implementation",false
+538-A,Elise,1400,"brute force|implementation",false
+538-A,Elise,1400,"brute force|implementation",true
+538-B,Elise,1400,"constructive algorithms|dp|greedy|implementation",true
+538-C,Elise,1600,"binary search|brute force|greedy|implementation|math",false
+538-C,Elise,1600,"binary search|brute force|greedy|implementation|math",false
+538-C,Elise,1600,"binary search|brute force|greedy|implementation|math",false
+538-C,Elise,1600,"binary search|brute force|greedy|implementation|math",true
+538-D,Elise,1800,"brute force|constructive algorithms|implementation",false
+538-D,Elise,1800,"brute force|constructive algorithms|implementation",true
+592-A,Elise,1200,"implementation",false
+592-B,Elise,1100,"math",true
+592-A,Elise,1200,"implementation",true
+592-C,Elise,1800,"math",true
+538-E,Elise,2200,"dfs and similar|dp|math|trees",false
+592-D,Elise,2200,"dfs and similar|dp|graphs|trees",false
+592-D,Elise,2200,"dfs and similar|dp|graphs|trees",false
+535-A,Elise,1000,"brute force|implementation",false
+535-A,Elise,1000,"brute force|implementation",false
+535-A,Elise,1000,"brute force|implementation",false
+535-A,Elise,1000,"brute force|implementation",true
+535-B,Elise,1100,"bitmasks|brute force|combinatorics|implementation",true
+535-C,Elise,1900,"binary search|greedy|math",false
+592-D,Elise,2200,"dfs and similar|dp|graphs|trees",true
+538-E,Elise,2200,"dfs and similar|dp|math|trees",true
+534-A,Elise,1100,"constructive algorithms|implementation|math",false
+593-A,Elise,1200,"brute force|implementation",true
+593-B,Elise,1600,"geometry|sortings",false
+593-C,Elise,2200,"constructive algorithms|math",false
+593-C,Elise,2200,"constructive algorithms|math",false
+593-C,Elise,2200,"constructive algorithms|math",false
+593-B,Elise,1600,"geometry|sortings",true
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+593-D,Elise,2400,"data structures|dfs and similar|graphs|math|trees",false
+115-A,Elise,900,"dfs and similar|graphs|trees",true
+431-C,Elise,1600,"dp|implementation|trees",true
+522-A,Elise,1200,"*special|dfs and similar|dp|graphs|trees",true
+429-A,Elise,1300,"dfs and similar|trees",false
+429-A,Elise,1300,"dfs and similar|trees",true
+339-D,Elise,1700,"data structures|trees",true
+557-D,Elise,2000,"combinatorics|dfs and similar|graphs|math",false
+557-D,Elise,2000,"combinatorics|dfs and similar|graphs|math",false
+557-D,Elise,2000,"combinatorics|dfs and similar|graphs|math",false
+557-D,Elise,2000,"combinatorics|dfs and similar|graphs|math",true
+550-D,Elise,1900,"constructive algorithms|graphs|implementation",false
+550-D,Elise,1900,"constructive algorithms|graphs|implementation",false
+550-D,Elise,1900,"constructive algorithms|graphs|implementation",false
+550-D,Elise,1900,"constructive algorithms|graphs|implementation",true
+543-B,Elise,2100,"constructive algorithms|graphs|shortest paths",false
+543-B,Elise,2100,"constructive algorithms|graphs|shortest paths",false
+543-B,Elise,2100,"constructive algorithms|graphs|shortest paths",true
+533-B,Elise,2000,"dfs and similar|dp|graphs|strings|trees",false
+533-B,Elise,2000,"dfs and similar|dp|graphs|strings|trees",false
+533-B,Elise,2000,"dfs and similar|dp|graphs|strings|trees",true
+542-C,Elise,2000,"constructive algorithms|graphs|math",false
+595-A,Elise,800,"constructive algorithms|implementation",true
+595-B,Elise,1600,"binary search|math",true
+595-C,Elise,2300,"games",false
+510-A,Elise,800,"implementation",true
+510-B,Elise,1500,"dfs and similar",true
+510-C,Elise,1600,"dfs and similar|graphs|sortings",false
+510-C,Elise,1600,"dfs and similar|graphs|sortings",true
+525-A,Elise,1100,"greedy|hashing|strings",true
+525-B,Elise,1400,"constructive algorithms|greedy|math|strings",true
+525-C,Elise,1600,"greedy|math|sortings",true
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+525-D,Elise,2400,"constructive algorithms|data structures|graphs|greedy|shortest paths",false
+598-A,Elise,900,"math",true
+598-B,Elise,1300,"implementation|strings",false
+598-C,Elise,2300,"geometry|sortings",false
+598-B,Elise,1300,"implementation|strings",true
+598-D,Elise,1700,"dfs and similar|graphs|shortest paths",true
+598-C,Elise,2300,"geometry|sortings",false
+598-E,Elise,2000,"brute force|dp",false
+598-E,Elise,2000,"brute force|dp",false
+598-E,Elise,2000,"brute force|dp",false
+598-E,Elise,2000,"brute force|dp",false
+598-E,Elise,2000,"brute force|dp",false
+598-E,Elise,2000,"brute force|dp",true
+576-B,Elise,2100,"constructive algorithms|dfs and similar|greedy|trees",false
+576-B,Elise,2100,"constructive algorithms|dfs and similar|greedy|trees",false
+576-B,Elise,2100,"constructive algorithms|dfs and similar|greedy|trees",true
+582-B,Elise,1900,"constructive algorithms|dp|matrices",false
+582-B,Elise,1900,"constructive algorithms|dp|matrices",false
+582-B,Elise,1900,"constructive algorithms|dp|matrices",true
+568-B,Elise,1900,"combinatorics|dp|math",false
+568-B,Elise,1900,"combinatorics|dp|math",false
+568-B,Elise,1900,"combinatorics|dp|math",false
+596-A,Elise,1100,"geometry|implementation",true
+596-B,Elise,1100,"greedy|implementation",true
+596-C,Elise,1700,"combinatorics|greedy|sortings",false
+596-C,Elise,1700,"combinatorics|greedy|sortings",false
+596-C,Elise,1700,"combinatorics|greedy|sortings",false
+596-C,Elise,1700,"combinatorics|greedy|sortings",false
+596-C,Elise,1700,"combinatorics|greedy|sortings",false
+596-C,Elise,1700,"combinatorics|greedy|sortings",true
+596-D,Elise,2300,"dp|math|probabilities|sortings",true
+284-A,Elise,1400,"implementation|math|number theory",false
+284-A,Elise,1400,"implementation|math|number theory",true
+284-C,Elise,1600,"constructive algorithms|data structures|dp",false
+284-C,Elise,1600,"constructive algorithms|data structures|dp",false
+284-C,Elise,1600,"constructive algorithms|data structures|dp",false
+284-C,Elise,1600,"constructive algorithms|data structures|dp",true
+284-D,Elise,1700,"dfs and similar|dp",true
+284-B,Elise,1000,"brute force|implementation",false
+284-B,Elise,1000,"brute force|implementation",false
+284-B,Elise,1000,"brute force|implementation",false
+284-B,Elise,1000,"brute force|implementation",true
+368-C,Elise,1500,"brute force|implementation",false
+368-C,Elise,1500,"brute force|implementation",false
+368-C,Elise,1500,"brute force|implementation",false
+368-C,Elise,1500,"brute force|implementation",true
+368-A,Elise,1000,"implementation",false
+368-A,Elise,1000,"implementation",false
+368-A,Elise,1000,"implementation",true
+368-B,Elise,1100,"data structures|dp",true
+368-D,Elise,1900,"data structures|two pointers",false
+368-D,Elise,1900,"data structures|two pointers",false
+368-D,Elise,1900,"data structures|two pointers",false
+368-D,Elise,1900,"data structures|two pointers",false
+368-D,Elise,1900,"data structures|two pointers",false
+368-D,Elise,1900,"data structures|two pointers",true
+368-E,Elise,2000,"combinatorics|graphs|implementation",false
+368-E,Elise,2000,"combinatorics|graphs|implementation",true
+599-A,Elise,800,"implementation",true
+599-B,Elise,1500,"implementation",false
+599-C,Elise,1600,"sortings",true
+599-B,Elise,1500,"implementation",false
+599-B,Elise,1500,"implementation",true
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",false
+599-D,Elise,1900,"brute force|math",true
+599-D,Elise,1900,"brute force|math",true
+602-A,Elise,1100,"brute force|implementation",true
+602-B,Elise,1400,"dp|implementation|two pointers",true
+602-C,Elise,1600,"graphs",true
+600-A,Elise,1600,"implementation|strings",false
+600-A,Elise,1600,"implementation|strings",true
+600-B,Elise,1300,"binary search|data structures|sortings|two pointers",false
+600-B,Elise,1300,"binary search|data structures|sortings|two pointers",true
+600-C,Elise,1800,"constructive algorithms|greedy|strings",false
+600-C,Elise,1800,"constructive algorithms|greedy|strings",true
+604-A,Elise,1000,"implementation",true
+604-B,Elise,1400,"binary search|greedy",false
+604-B,Elise,1400,"binary search|greedy",true
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",false
+604-C,Elise,1600,"constructive algorithms|dp|greedy|math",true
+600-D,Elise,2000,"geometry",false
+600-D,Elise,2000,"geometry",false
+600-D,Elise,2000,"geometry",false
+600-D,Elise,2000,"geometry",true
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",false
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",false
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",false
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",false
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",false
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",false
+600-E,Elise,2300,"data structures|dfs and similar|dsu|trees",true
+569-D,Elise,1900,"brute force|dp|math",true
+604-D,Elise,1800,"combinatorics|dsu|math|number theory",false
+604-D,Elise,1800,"combinatorics|dsu|math|number theory",false
+604-D,Elise,1800,"combinatorics|dsu|math|number theory",true
+602-D,Elise,2100,"math",true
+586-D,Elise,1700,"dfs and similar|dp|graphs|shortest paths",false
+586-D,Elise,1700,"dfs and similar|dp|graphs|shortest paths",true
+570-D,Elise,2200,"binary search|bitmasks|constructive algorithms|dfs and similar|graphs|trees",false
+570-D,Elise,2200,"binary search|bitmasks|constructive algorithms|dfs and similar|graphs|trees",true
+606-A,Elise,1200,"implementation",true
+606-C,Elise,1600,"",false
+606-C,Elise,1600,"",true
+606-B,Elise,1600,"implementation",true
+606-D,Elise,1700,"graphs",false
+606-D,Elise,1700,"graphs",false
+606-D,Elise,1700,"graphs",false
+606-D,Elise,1700,"graphs",true
+572-D,Elise,2000,"dp|sortings",true
+557-C,Elise,1900,"brute force|data structures|dp|greedy|math|sortings",false
+557-C,Elise,1900,"brute force|data structures|dp|greedy|math|sortings",false
+557-C,Elise,1900,"brute force|data structures|dp|greedy|math|sortings",true
+609-A,Elise,800,"greedy|implementation|sortings",true
+609-B,Elise,1100,"constructive algorithms|implementation",true
+609-C,Elise,1500,"implementation|math",false
+609-C,Elise,1500,"implementation|math",true
+609-D,Elise,2000,"binary search|greedy|two pointers",false
+609-D,Elise,2000,"binary search|greedy|two pointers",false
+609-D,Elise,2000,"binary search|greedy|two pointers",false
+609-D,Elise,2000,"binary search|greedy|two pointers",true
+611-A,Elise,900,"implementation",true
+611-B,Elise,1300,"bitmasks|brute force|implementation",true
+611-C,Elise,1500,"dp|implementation",true
+611-E,Elise,2400,"data structures|greedy|sortings",false
+611-E,Elise,2400,"data structures|greedy|sortings",false
+611-E,Elise,2400,"data structures|greedy|sortings",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",false
+609-E,Elise,2100,"data structures|dfs and similar|dsu|graphs|trees",true
+220-B,Elise,1800,"constructive algorithms|data structures",false
+220-B,Elise,1800,"constructive algorithms|data structures",true
+608-A,Elise,1000,"implementation|math",true
+608-B,Elise,1500,"combinatorics|strings",false
+608-B,Elise,1500,"combinatorics|strings",true
+608-C,Elise,1600,"dp",false
+608-C,Elise,1600,"dp",true
+608-D,Elise,1900,"dp",true
+615-A,Elise,800,"implementation",true
+615-B,Elise,1600,"dp|graphs",true
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",false
+615-D,Elise,2000,"math|number theory",true
+615-C,Elise,2000,"dp|greedy|strings|trees",true
+614-A,Elise,1500,"brute force|implementation",true
+614-B,Elise,1400,"implementation|math",false
+614-B,Elise,1400,"implementation|math",false
+614-B,Elise,1400,"implementation|math",true
+614-C,Elise,1900,"geometry",false
+614-C,Elise,1900,"geometry",false
+614-D,Elise,1900,"dp|greedy|sortings",false
+614-D,Elise,1900,"dp|greedy|sortings",false
+614-D,Elise,1900,"dp|greedy|sortings",false
+614-D,Elise,1900,"dp|greedy|sortings",false
+614-D,Elise,1900,"dp|greedy|sortings",false
+614-D,Elise,1900,"dp|greedy|sortings",false
+614-D,Elise,1900,"dp|greedy|sortings",true
+612-A,Elise,1300,"brute force|implementation|strings",true
+612-B,Elise,1200,"implementation|math",true
+612-C,Elise,1400,"data structures|expression parsing|math",false
+612-C,Elise,1400,"data structures|expression parsing|math",false
+612-C,Elise,1400,"data structures|expression parsing|math",true
+612-D,Elise,1800,"greedy|sortings",true
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",false
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",false
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",false
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",false
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",false
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",false
+612-E,Elise,2200,"combinatorics|constructive algorithms|dfs and similar|graphs|math",true
+620-A,Elise,800,"implementation|math",true
+620-B,Elise,1000,"implementation",false
+620-B,Elise,1000,"implementation",true
+620-C,Elise,1500,"greedy",true
+620-D,Elise,2200,"binary search|two pointers",false
+620-D,Elise,2200,"binary search|two pointers",false
+620-D,Elise,2200,"binary search|two pointers",false
+620-D,Elise,2200,"binary search|two pointers",false
+620-D,Elise,2200,"binary search|two pointers",true
+617-A,Elise,800,"math",true
+617-B,Elise,1300,"combinatorics",false
+617-B,Elise,1300,"combinatorics",true
+617-C,Elise,1600,"implementation",false
+617-D,Elise,1700,"constructive algorithms|implementation",false
+617-D,Elise,1700,"constructive algorithms|implementation",false
+617-C,Elise,1600,"implementation",true
+617-D,Elise,1700,"constructive algorithms|implementation",false
+617-D,Elise,1700,"constructive algorithms|implementation",false
+617-D,Elise,1700,"constructive algorithms|implementation",true
+610-A,Elise,1000,"combinatorics|math",true
+610-B,Elise,1300,"constructive algorithms|implementation",false
+610-B,Elise,1300,"constructive algorithms|implementation",true
+610-C,Elise,1800,"constructive algorithms",true
+618-A,Elise,800,"implementation",true
+618-B,Elise,1100,"constructive algorithms",true
+618-C,Elise,1600,"geometry|implementation",false
+618-C,Elise,1600,"geometry|implementation",true
+618-D,Elise,2200,"dfs and similar|dp|graph matchings|greedy|trees",false
+621-A,Elise,900,"implementation",true
+621-B,Elise,1300,"combinatorics|implementation",true
+621-C,Elise,1700,"combinatorics|math|number theory|probabilities",true
+621-E,Elise,2000,"dp|matrices",true
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+610-D,Elise,2300,"constructive algorithms|data structures|geometry|two pointers",false
+625-A,Elise,1700,"implementation|math",false
+625-A,Elise,1700,"implementation|math",true
+625-B,Elise,1200,"constructive algorithms|greedy|strings",false
+625-B,Elise,1200,"constructive algorithms|greedy|strings",true
+625-C,Elise,1300,"constructive algorithms|implementation",true
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+625-D,Elise,2400,"constructive algorithms|implementation|math",false
+624-A,Elise,800,"math",true
+624-B,Elise,1100,"greedy|sortings",false
+624-B,Elise,1100,"greedy|sortings",true
+624-C,Elise,1800,"constructive algorithms|dfs and similar|graphs",true
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",false
+624-D,Elise,2300,"dp|greedy|number theory",true
+616-A,Elise,900,"implementation|strings",false
+616-A,Elise,900,"implementation|strings",true
+616-B,Elise,1000,"games|greedy",true
+616-C,Elise,1600,"dfs and similar",false
+616-C,Elise,1600,"dfs and similar",true
+616-D,Elise,1600,"binary search|data structures|two pointers",false
+616-D,Elise,1600,"binary search|data structures|two pointers",false
+616-D,Elise,1600,"binary search|data structures|two pointers",true
+622-A,Elise,1000,"implementation|math",true
+622-B,Elise,900,"implementation",true
+622-C,Elise,1700,"data structures|implementation",false
+622-C,Elise,1700,"data structures|implementation",false
+622-C,Elise,1700,"data structures|implementation",false
+622-C,Elise,1700,"data structures|implementation",true
+622-D,Elise,1900,"constructive algorithms",true
+622-E,Elise,2200,"dfs and similar|greedy|sortings|trees",false
+622-E,Elise,2200,"dfs and similar|greedy|sortings|trees",false
+622-E,Elise,2200,"dfs and similar|greedy|sortings|trees",true
+626-A,Elise,1000,"brute force|implementation",true
+626-B,Elise,1300,"constructive algorithms|dp|math",true
+626-C,Elise,1600,"brute force|greedy|math|number theory",true
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",false
+626-D,Elise,1800,"brute force|combinatorics|dp|probabilities",true
+618-D,Elise,2200,"dfs and similar|dp|graph matchings|greedy|trees",false
+528-A,Elise,1500,"data structures|implementation",true
+528-B,Elise,1800,"dp|greedy",false
+528-B,Elise,1800,"dp|greedy",false
+528-B,Elise,1800,"dp|greedy",true
+521-A,Elise,1500,"greedy|math",true
+521-B,Elise,2100,"data structures|greedy|implementation",false
+521-B,Elise,2100,"data structures|greedy|implementation",false
+521-B,Elise,2100,"data structures|greedy|implementation",false
+521-B,Elise,2100,"data structures|greedy|implementation",false
+521-B,Elise,2100,"data structures|greedy|implementation",true
+516-A,Elise,1400,"dp|greedy|implementation|math",true
+516-B,Elise,2000,"data structures|graph matchings|greedy|implementation",false
+516-B,Elise,2000,"data structures|graph matchings|greedy|implementation",false
+516-B,Elise,2000,"data structures|graph matchings|greedy|implementation",false
+516-B,Elise,2000,"data structures|graph matchings|greedy|implementation",false
+516-B,Elise,2000,"data structures|graph matchings|greedy|implementation",true
+506-A,Elise,1900,"dp",true
+628-A,Elise,1000,"implementation|math",true
+628-B,Elise,1300,"dp",true
+628-C,Elise,1300,"greedy|strings",true
+629-A,Elise,800,"brute force|combinatorics|constructive algorithms|implementation",true
+629-B,Elise,1100,"brute force",false
+629-B,Elise,1100,"brute force",true
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",false
+629-C,Elise,2000,"dp|strings",true
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",false
+629-D,Elise,2000,"data structures|dp",true
+633-A,Elise,1100,"brute force|math|number theory",true
+633-B,Elise,1300,"brute force|constructive algorithms|math|number theory",true
+633-C,Elise,1900,"data structures|dp|hashing|implementation|sortings|string suffix structures|strings",false
+633-D,Elise,2000,"brute force|dp|hashing|implementation|math",false
+633-D,Elise,2000,"brute force|dp|hashing|implementation|math",false
+633-D,Elise,2000,"brute force|dp|hashing|implementation|math",false
+633-D,Elise,2000,"brute force|dp|hashing|implementation|math",false
+633-D,Elise,2000,"brute force|dp|hashing|implementation|math",false
+635-A,Elise,1100,"brute force|implementation",true
+635-B,Elise,1300,"",false
+635-B,Elise,1300,"",true
+635-C,Elise,1700,"dp|math",false
+635-C,Elise,1700,"dp|math",false
+635-C,Elise,1700,"dp|math",false
+635-C,Elise,1700,"dp|math",false
+635-C,Elise,1700,"dp|math",true
+506-B,Elise,2200,"dfs and similar|graphs",true
+226-B,Elise,1900,"greedy",false
+226-B,Elise,1900,"greedy",false
+226-B,Elise,1900,"greedy",false
+226-B,Elise,1900,"greedy",true
+400-D,Elise,2000,"dsu|graphs|shortest paths",false
+400-D,Elise,2000,"dsu|graphs|shortest paths",false
+400-D,Elise,2000,"dsu|graphs|shortest paths",true
+651-A,Elise,1100,"dp|greedy|implementation|math",true
+651-B,Elise,1200,"greedy|sortings",true
+651-C,Elise,1400,"data structures|geometry|implementation|sortings",true
+651-D,Elise,1900,"binary search|brute force|dp|two pointers",false
+651-D,Elise,1900,"binary search|brute force|dp|two pointers",false
+651-D,Elise,1900,"binary search|brute force|dp|two pointers",false
+651-D,Elise,1900,"binary search|brute force|dp|two pointers",true
+507-A,Elise,1000,"greedy|implementation|sortings",false
+507-A,Elise,1000,"greedy|implementation|sortings",false
+507-A,Elise,1000,"greedy|implementation|sortings",true
+507-B,Elise,1400,"geometry|math",false
+507-B,Elise,1400,"geometry|math",true
+507-C,Elise,1700,"implementation|math|trees",false
+507-C,Elise,1700,"implementation|math|trees",false
+507-C,Elise,1700,"implementation|math|trees",false
+507-C,Elise,1700,"implementation|math|trees",true
+507-E,Elise,2100,"dfs and similar|dp|graphs|shortest paths",true
+501-A,Elise,900,"implementation",false
+501-A,Elise,900,"implementation",false
+501-A,Elise,900,"implementation",true
+501-B,Elise,1100,"data structures|dsu|strings",false
+501-B,Elise,1100,"data structures|dsu|strings",false
+501-B,Elise,1100,"data structures|dsu|strings",true
+501-C,Elise,1500,"constructive algorithms|data structures|greedy|sortings|trees",false
+501-C,Elise,1500,"constructive algorithms|data structures|greedy|sortings|trees",false
+501-C,Elise,1500,"constructive algorithms|data structures|greedy|sortings|trees",false
+501-C,Elise,1500,"constructive algorithms|data structures|greedy|sortings|trees",false
+501-C,Elise,1500,"constructive algorithms|data structures|greedy|sortings|trees",true
+644-A,Elise,1000,"*special|constructive algorithms",true
+644-B,Elise,1700,"*special|constructive algorithms|data structures|two pointers",false
+644-B,Elise,1700,"*special|constructive algorithms|data structures|two pointers",false
+644-B,Elise,1700,"*special|constructive algorithms|data structures|two pointers",false
+644-B,Elise,1700,"*special|constructive algorithms|data structures|two pointers",true
+644-C,Elise,2100,"*special|binary search|data structures|implementation|sortings|strings",true
+655-A,Elise,1200,"brute force|implementation",true
+655-B,Elise,1200,"greedy|math",false
+655-B,Elise,1200,"greedy|math",true
+655-C,Elise,1600,"binary search|two pointers",true
+655-D,Elise,1800,"binary search|dp|graphs",true
+653-A,Elise,900,"brute force|implementation|sortings",true
+653-B,Elise,1300,"brute force|dfs and similar|dp|strings",false
+653-B,Elise,1300,"brute force|dfs and similar|dp|strings",true
+653-C,Elise,1900,"brute force|implementation",false
+653-C,Elise,1900,"brute force|implementation",false
+653-C,Elise,1900,"brute force|implementation",true
+653-D,Elise,2200,"binary search|flows|graphs",false
+653-D,Elise,2200,"binary search|flows|graphs",true
+655-E,Elise,2200,"dp|greedy|strings",false
+655-E,Elise,2200,"dp|greedy|strings",true
+652-A,Elise,1400,"implementation|math",false
+652-B,Elise,1000,"sortings",true
+652-C,Elise,1800,"combinatorics|sortings|two pointers",false
+652-D,Elise,1800,"data structures|sortings",false
+652-D,Elise,1800,"data structures|sortings",true
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+659-A,Elise,1000,"implementation|math",true
+659-B,Elise,1300,"constructive algorithms|sortings",true
+659-C,Elise,1200,"greedy|implementation",true
+659-D,Elise,1500,"geometry|implementation|math",false
+659-D,Elise,1500,"geometry|implementation|math",false
+659-D,Elise,1500,"geometry|implementation|math",false
+659-D,Elise,1500,"geometry|implementation|math",true
+659-E,Elise,1600,"data structures|dfs and similar|dsu|graphs|greedy",true
+659-B,Elise,1300,"constructive algorithms|sortings",true
+664-A,Elise,800,"math|number theory",true
+664-B,Elise,1800,"greedy",false
+664-B,Elise,1800,"greedy",false
+664-C,Elise,2000,"greedy",true
+664-B,Elise,1800,"greedy",true
+659-F,Elise,2000,"dfs and similar|dsu|graphs|greedy|sortings",false
+659-F,Elise,2000,"dfs and similar|dsu|graphs|greedy|sortings",false
+659-F,Elise,2000,"dfs and similar|dsu|graphs|greedy|sortings",true
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",false
+652-E,Elise,2300,"dfs and similar|dsu|graphs|trees",true
+667-A,Elise,1100,"geometry|math",false
+667-B,Elise,1100,"constructive algorithms|geometry",true
+667-A,Elise,1100,"geometry|math",true
+667-C,Elise,1800,"dp|strings",true
+667-D,Elise,2000,"brute force|graphs|shortest paths",false
+667-D,Elise,2000,"brute force|graphs|shortest paths",false
+686-A,Elise,800,"constructive algorithms|implementation",true
+686-B,Elise,1100,"constructive algorithms|implementation|sortings",true
+686-C,Elise,1700,"brute force|combinatorics|math",false
+686-C,Elise,1700,"brute force|combinatorics|math",false
+686-C,Elise,1700,"brute force|combinatorics|math",true
+698-A,Elise,1400,"dp",true
+701-A,Elise,800,"greedy|implementation",true
+701-B,Elise,1200,"data structures|math",true
+701-C,Elise,1500,"binary search|strings|two pointers",true
+701-D,Elise,1900,"binary search|math",true
+701-E,Elise,1800,"dfs and similar|dp|graphs|trees",false
+701-E,Elise,1800,"dfs and similar|dp|graphs|trees",false
+701-E,Elise,1800,"dfs and similar|dp|graphs|trees",true
+699-D,Elise,1700,"constructive algorithms|dfs and similar|dsu|graphs|trees",false
+699-D,Elise,1700,"constructive algorithms|dfs and similar|dsu|graphs|trees",true
+696-A,Elise,1500,"brute force|data structures|implementation|trees",false
+696-A,Elise,1500,"brute force|data structures|implementation|trees",true
+696-B,Elise,1700,"dfs and similar|math|probabilities|trees",true
+696-C,Elise,2000,"combinatorics|dp|implementation|math|matrices",false
+696-C,Elise,2000,"combinatorics|dp|implementation|math|matrices",false
+696-C,Elise,2000,"combinatorics|dp|implementation|math|matrices",false
+696-C,Elise,2000,"combinatorics|dp|implementation|math|matrices",true
+632-A,Elise,1200,"",true
+632-B,Elise,1400,"brute force|constructive algorithms",false
+632-B,Elise,1400,"brute force|constructive algorithms",true
+632-C,Elise,1700,"sortings|strings",true
+443-A,Elise,800,"constructive algorithms|implementation",true
+443-B,Elise,1500,"brute force|implementation|strings",true
+443-D,Elise,1800,"dp|greedy|math|probabilities|sortings",false
+443-D,Elise,1800,"dp|greedy|math|probabilities|sortings",false
+443-D,Elise,1800,"dp|greedy|math|probabilities|sortings",false
+443-D,Elise,1800,"dp|greedy|math|probabilities|sortings",false
+443-D,Elise,1800,"dp|greedy|math|probabilities|sortings",true
+443-C,Elise,1700,"bitmasks|brute force|constructive algorithms|implementation",false
+334-A,Elise,1000,"implementation",true
+334-B,Elise,1400,"sortings",true
+334-C,Elise,1600,"math",true
+334-D,Elise,1800,"greedy|implementation|two pointers",false
+334-D,Elise,1800,"greedy|implementation|two pointers",false
+334-D,Elise,1800,"greedy|implementation|two pointers",false
+334-D,Elise,1800,"greedy|implementation|two pointers",false
+334-D,Elise,1800,"greedy|implementation|two pointers",true
+702-A,Elise,800,"dp|greedy|implementation",true
+702-B,Elise,1500,"brute force|data structures|implementation|math",false
+702-B,Elise,1500,"brute force|data structures|implementation|math",false
+702-B,Elise,1500,"brute force|data structures|implementation|math",true
+702-B,Elise,1500,"brute force|data structures|implementation|math",false
+702-B,Elise,1500,"brute force|data structures|implementation|math",true
+702-C,Elise,1500,"binary search|implementation|two pointers",false
+702-C,Elise,1500,"binary search|implementation|two pointers",false
+702-C,Elise,1500,"binary search|implementation|two pointers",false
+702-C,Elise,1500,"binary search|implementation|two pointers",false
+702-C,Elise,1500,"binary search|implementation|two pointers",false
+702-C,Elise,1500,"binary search|implementation|two pointers",false
+702-C,Elise,1500,"binary search|implementation|two pointers",true
+702-D,Elise,1900,"math",true
+702-E,Elise,2100,"data structures|graphs",true
+687-A,Elise,1500,"dfs and similar|graphs",false
+687-A,Elise,1500,"dfs and similar|graphs",true
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",false
+687-B,Elise,1800,"chinese remainder theorem|math|number theory",true
+687-C,Elise,1900,"dp",false
+687-C,Elise,1900,"dp",false
+687-C,Elise,1900,"dp",false
+687-C,Elise,1900,"dp",false
+679-A,Elise,1400,"constructive algorithms|interactive|math",false
+679-A,Elise,1400,"constructive algorithms|interactive|math",false
+679-A,Elise,1400,"constructive algorithms|interactive|math",true
+679-B,Elise,2200,"binary search|dp|greedy",false
+679-B,Elise,2200,"binary search|dp|greedy",false
+679-B,Elise,2200,"binary search|dp|greedy",false
+679-B,Elise,2200,"binary search|dp|greedy",false
+679-B,Elise,2200,"binary search|dp|greedy",false
+679-B,Elise,2200,"binary search|dp|greedy",true
+691-A,Elise,1000,"implementation",true
+691-B,Elise,1600,"implementation|strings",false
+691-B,Elise,1600,"implementation|strings",true
+691-D,Elise,1700,"dfs and similar|dsu|math",true
+679-C,Elise,2400,"dfs and similar|dsu|implementation",false
+679-C,Elise,2400,"dfs and similar|dsu|implementation",false
+679-C,Elise,2400,"dfs and similar|dsu|implementation",false
+679-C,Elise,2400,"dfs and similar|dsu|implementation",true
+691-E,Elise,1900,"matrices",false
+691-E,Elise,1900,"matrices",false
+691-E,Elise,1900,"matrices",false
+691-E,Elise,1900,"matrices",true
+703-A,Elise,800,"implementation",true
+703-B,Elise,1400,"implementation|math",true
+703-C,Elise,2100,"geometry|implementation",false
+703-C,Elise,2100,"geometry|implementation",false
+703-C,Elise,2100,"geometry|implementation",false
+703-C,Elise,2100,"geometry|implementation",true
+705-A,Elise,800,"implementation",true
+705-B,Elise,1100,"games|math",true
+705-C,Elise,1600,"brute force|data structures|implementation",false
+705-C,Elise,1600,"brute force|data structures|implementation",false
+705-C,Elise,1600,"brute force|data structures|implementation",false
+705-C,Elise,1600,"brute force|data structures|implementation",false
+705-C,Elise,1600,"brute force|data structures|implementation",false
+705-C,Elise,1600,"brute force|data structures|implementation",false
+705-C,Elise,1600,"brute force|data structures|implementation",true
+703-D,Elise,2100,"data structures",true
+671-A,Elise,1800,"dp|geometry|greedy|implementation",false
+671-A,Elise,1800,"dp|geometry|greedy|implementation",false
+666-B,Elise,2000,"graphs|shortest paths",false
+666-B,Elise,2000,"graphs|shortest paths",false
+671-A,Elise,1800,"dp|geometry|greedy|implementation",true
+671-B,Elise,2000,"binary search|greedy",false
+671-B,Elise,2000,"binary search|greedy",false
+671-B,Elise,2000,"binary search|greedy",true
+706-A,Elise,900,"brute force|geometry|implementation",true
+706-B,Elise,1100,"binary search|dp|implementation",true
+706-C,Elise,1600,"dp|strings",false
+706-C,Elise,1600,"dp|strings",false
+706-C,Elise,1600,"dp|strings",false
+706-C,Elise,1600,"dp|strings",true
+706-D,Elise,1800,"binary search|bitmasks|data structures|trees",false
+706-D,Elise,1800,"binary search|bitmasks|data structures|trees",false
+706-D,Elise,1800,"binary search|bitmasks|data structures|trees",true
+100947-A,Elise,undefined,"",true
+100947-B,Elise,undefined,"",true
+100947-D,Elise,undefined,"",true
+100947-F,Elise,undefined,"",true
+100947-C,Elise,undefined,"",true
+100947-I,Elise,undefined,"",true
+100947-K,Elise,undefined,"",true
+100947-G,Elise,undefined,"",true
+100947-E,Elise,undefined,"",true
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",false
+100947-H,Elise,undefined,"",true
+100947-J,Elise,undefined,"",false
+100947-J,Elise,undefined,"",false
+100947-J,Elise,undefined,"",false
+100947-J,Elise,undefined,"",true
+101047-B,Elise,undefined,"",false
+101047-B,Elise,undefined,"",false
+101047-B,Elise,undefined,"",true
+101047-L,Elise,undefined,"",true
+101047-M,Elise,undefined,"",true
+101047-E,Elise,undefined,"",true
+101047-K,Elise,undefined,"",false
+101047-K,Elise,undefined,"",true
+101047-H,Elise,undefined,"",false
+101047-H,Elise,undefined,"",false
+707-A,Elise,800,"implementation",true
+707-B,Elise,1300,"graphs",true
+707-D,Elise,2200,"bitmasks|data structures|dfs and similar|implementation",true
+707-C,Elise,1500,"math|number theory",true
+101047-H,Elise,undefined,"",false
+101047-H,Elise,undefined,"",false
+101047-H,Elise,undefined,"",false
+101047-H,Elise,undefined,"",false
+100883-B,Elise,undefined,"",true
+100883-F,Elise,undefined,"",true
+100883-J,Elise,undefined,"",false
+100883-J,Elise,undefined,"",true
+100883-G,Elise,undefined,"",false
+100883-G,Elise,undefined,"",false
+100883-G,Elise,undefined,"",true
+100883-C,Elise,undefined,"",true
+100883-E,Elise,undefined,"",true
+100883-D,Elise,undefined,"",true
+709-A,Elise,900,"implementation",false
+709-A,Elise,900,"implementation",true
+709-B,Elise,1500,"greedy|implementation|sortings",true
+709-C,Elise,1200,"greedy|strings",true
+709-D,Elise,1900,"greedy|math",false
+709-D,Elise,1900,"greedy|math",false
+709-D,Elise,1900,"greedy|math",true
+100883-H,Elise,undefined,"",false
+100883-H,Elise,undefined,"",false
+711-A,Elise,800,"brute force|implementation",true
+711-B,Elise,1400,"constructive algorithms|implementation",false
+711-B,Elise,1400,"constructive algorithms|implementation",true
+711-C,Elise,1700,"dp",false
+711-C,Elise,1700,"dp",true
+711-D,Elise,1900,"combinatorics|dfs and similar|graphs|math",false
+711-D,Elise,1900,"combinatorics|dfs and similar|graphs|math",false
+711-D,Elise,1900,"combinatorics|dfs and similar|graphs|math",false
+711-D,Elise,1900,"combinatorics|dfs and similar|graphs|math",false
+711-D,Elise,1900,"combinatorics|dfs and similar|graphs|math",true
+100883-I,Elise,undefined,"",false
+100883-I,Elise,undefined,"",false
+100883-I,Elise,undefined,"",true
+100883-H,Elise,undefined,"",true
+100883-H,Elise,undefined,"",true
+100883-A,Elise,undefined,"",true
+710-A,Elise,800,"implementation",false
+710-A,Elise,800,"implementation",true
+710-B,Elise,1400,"brute force|sortings",true
+710-C,Elise,1500,"constructive algorithms|math",true
+710-E,Elise,2000,"dfs and similar|dp",false
+710-E,Elise,2000,"dfs and similar|dp",false
+722-A,Elise,1300,"brute force|implementation",false
+722-B,Elise,1200,"implementation|strings",false
+722-B,Elise,1200,"implementation|strings",false
+722-B,Elise,1200,"implementation|strings",true
+722-A,Elise,1300,"brute force|implementation",false
+722-A,Elise,1300,"brute force|implementation",false
+722-A,Elise,1300,"brute force|implementation",true
+722-C,Elise,1600,"data structures|dsu",true
