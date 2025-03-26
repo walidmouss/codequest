@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import axios from "axios";
 
 const csvHeader = "problem_id,user_handler,rating,topics,attempts,solved,topicsSkill,creationTime\n";
 
@@ -12,6 +13,8 @@ try {
 } catch (error) {
     await fs.writeFile(csvPath, csvHeader, "utf-8"); // Only write header if file doesn't exist
 }
+
+
 
 function formatCSV(problem) {
     return `${problem.problem_id},${problem.user_handler},${problem.rating},"${problem.topics.join(";")}",${problem.attempts},${problem.solved},${problem.topicsSkill},${problem.creationTime}\n`;
@@ -41,6 +44,7 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
 
     await Promise.all(
         batch.map(async (placeHolder) => {
+            var total_no_of_trials = 0
             const problemAttempts = {};
 
             console.log("Sending handler:", placeHolder);
@@ -55,6 +59,7 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
 
                 const problems = await response.json();
                 for (let j = 0; j < problems.length; j++) {
+                    total_no_of_trials++
                     let currentProblem = problems[j];
                     let problemId = currentProblem.id;
                     let skillPoints = 0;
@@ -90,8 +95,8 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                         problemAttempts[problemId].topics = ["none"];
                 }
 
-                const csvRows = Object.values(problemAttempts).map(formatCSV).join("");
-                await fs.appendFile(csvPath, csvRows, "utf-8"); // Append new rows
+                //const csvRows = Object.values(problemAttempts).map(formatCSV).join("");
+                //await fs.appendFile(csvPath, csvRows, "utf-8"); // Append new rows
 
                 // Push the final processed data
                 //tempData.push(...Object.values(problemAttempts));
@@ -99,10 +104,63 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
+
+            let difficultyStats = { easy: 0, medium: 0, hard: 0, ratingNotAvailable:0 };
+            Object.values(problemAttempts).forEach(p => { 
+                if(p.rating <= 1400 && p.rating != 0)
+                    difficultyStats["easy"] ++
+                else if(p.rating <= 1800 && p.rating != 0)
+                    difficultyStats["medium"] ++
+                else if(p.rating > 1800)
+                    difficultyStats["hard"] ++
+                else
+                    difficultyStats["ratingNotAvailable"] ++
+            });
+
+
+            const response = await axios.get(
+                `https://codeforces.com/api/user.info?handles=${placeHolder}&checkHistoricHandles=false`
+            );
+            const currentData = response.data.result[0]
+
+            //console.log(difficultyStats);
+
+            const strongTopics = Object.entries(progress.topicsSolved)
+            .sort((a, b) => b[1] - a[1]) // sort by count descending
+            .slice(0, 3); // take the top 3
+            //console.log("top 3 topics:", strongTopics);
+
+
+            const weakTopics = Object.entries(progress.topicsSolved)
+            .filter(([topic, attempts]) => attempts >= 3) // Ignore rare topics
+            .sort((a, b) => a[1] - b[1]) // sort by count descending
+            .slice(0, 3); // take the top 3
+            //console.log("weakest 3 topics:", weakTopics);
+            
+              
+            
+            
+            const successRate = Object.keys(problemAttempts).length / total_no_of_trials
+            //console.log("successRate: " , successRate*100 )
+
+            
+            const userData = {
+                user_handle : placeHolder,
+                currentRating : currentData.rating ?? 0,
+                maxRating : currentData.maxRating ?? 0,
+                successRate : successRate.toFixed(2),
+                weakTopics: weakTopics.map(([topic]) => topic), 
+                strongTopics: strongTopics.map(([topic]) => topic),
+                difficultyStats : difficultyStats,
+            }
+
+            console.log(userData)
+
         })
     );
 
-    //await fs.writeFile(tempDataPath, JSON.stringify(tempData, null, 2));
+    //////////////////////////////////////user details part //////////////////////////////////////////////
+
 
     await delay(500); // ⏳ Wait before starting the next batch
 }

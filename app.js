@@ -6,6 +6,7 @@ import { readFile , writeFile  } from 'fs/promises';
 const app = express();
 app.use(express.json());
 
+
 app.get("/randProblem" , async (req,res) =>{
 
     try{
@@ -50,7 +51,7 @@ app.get("/randProblem" , async (req,res) =>{
     }
 })
 
-
+///////////////////////////this is the sbumissions details not user detail ////////////////
 app.post("/userDetails", async (req, res) => {
     const { handler } = req.body;
 
@@ -176,5 +177,21 @@ app.post("/fetchDataset" , async(req,res)=>{
         res.status(500).json({ error: "Couldn't get contest data" });
     }
 });
+
+
+app.post("/handlerData" , async(req,res)=>{
+    const { handler } = req.body;
+    
+    const response = await axios.get(
+        `https://codeforces.com/api/user.info?handles=${handler}&checkHistoricHandles=false`
+    );
+    const currentData = response.data.result[0]
+    const userData = {
+        currentRating : currentData.rating,
+        maxRating : currentData.maxRating
+    }
+    res.json(userData);
+    //const response = await axios get(``)
+})
 
 app.listen(3000, () => console.log("Server running on port 3000"));
