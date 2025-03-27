@@ -3,22 +3,39 @@ import path from "path";
 import axios from "axios";
 
 const csvHeader = "problem_id,user_handler,rating,topics,attempts,solved,topicsSkill,creationTime\n";
+const userCsvHeader = "user_handler,currentRating,maxRating,successRate,strongTopics,weakTopics,easy,medium,hard,ratingNotAvailable\n";
+
 
 const handlersPath = path.join("./data/handlers.json");
 const progressPath = "./data/progress.json";
+
+
 //const tempDataPath = "./data/tempData.json";
 const csvPath = "./ml/dataset.csv";
+const filePath ="./ml/usersData.csv";
+
+
 try {
     await fs.access(csvPath); // Check if file exists
 } catch (error) {
     await fs.writeFile(csvPath, csvHeader, "utf-8"); // Only write header if file doesn't exist
 }
 
-
-
-function formatCSV(problem) {
-    return `${problem.problem_id},${problem.user_handler},${problem.rating},"${problem.topics.join(";")}",${problem.attempts},${problem.solved},${problem.topicsSkill},${problem.creationTime}\n`;
+try {
+    await fs.access(filePath); // Check if file exists
+} catch (error) {
+    await fs.writeFile(filePath, userCsvHeader, "utf-8"); // Create file with header
 }
+
+
+function formatCSV(entry) {
+    return `${entry.problem_id},${entry.user_handler},${entry.rating},"${entry.topics}",${entry.attempts},${entry.solved},${entry.topicsSkill},${entry.creationTime},${entry.problem_ratingAvailable},${entry.problem_topicsAvailable},${entry.user_currentRating},${entry.user_maxRating},${entry.user_successRate},"${entry.user_strongTopics.join(";")}","${entry.user_weakTopics.join(";")}",${entry.user_easy},${entry.user_medium},${entry.user_hard},${entry.user_ratingNotAvailable}\n`;
+}
+
+function formatUserCSV(user) {
+    return `${user.user_handler},${user.currentRating},${user.maxRating},${user.successRate},"${user.strongTopics.join(";")}","${user.weakTopics.join(";")}",${user.difficultyStats.easy},${user.difficultyStats.medium},${user.difficultyStats.hard},${user.difficultyStats.ratingNotAvailable}\n`;
+}
+
 
 // Read data files
 const [handlers, progressFile,/* tempDataFile*/] = await Promise.all([
@@ -36,7 +53,7 @@ const progress = JSON.parse(progressFile);
 //const tempData = JSON.parse(tempDataFile);
 
 // Batch processing
-const batchSize = 5; // Adjust this based on your needs
+const batchSize = 2; // Adjust this based on your needs
 
 // Process handlers in batches
 for (let i = 0; i < handlersList.length; i += batchSize) {
@@ -73,6 +90,7 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                             topics: currentProblem.topics,
                             attempts: 0,
                             solved: false,
+                            //ratingAvailable : true,
                         };
                     }
 
@@ -90,7 +108,10 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                     // Compute average skill points for this problem
                     problemAttempts[problemId].topicsSkill = topicsCount > 0 ? skillPoints / topicsCount : 0;
                     problemAttempts[problemId].creationTime = currentProblem.creationTime;
-                    if (!problemAttempts[problemId].rating) problemAttempts[problemId].rating = 0;
+                    if (!problemAttempts[problemId].rating){
+                        problemAttempts[problemId].rating = 0;
+                        problemAttempts[problemId].ratingNotAvailable = false
+                    }
                     if (!problemAttempts[problemId].topics || problemAttempts[problemId].topics.length === 0) 
                         problemAttempts[problemId].topics = ["none"];
                 }
@@ -98,7 +119,7 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                 //const csvRows = Object.values(problemAttempts).map(formatCSV).join("");
                 //await fs.appendFile(csvPath, csvRows, "utf-8"); // Append new rows
 
-                // Push the final processed data
+                //Push the final processed data
                 //tempData.push(...Object.values(problemAttempts));
 
             } catch (error) {
@@ -143,9 +164,9 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
             const successRate = Object.keys(problemAttempts).length / total_no_of_trials
             //console.log("successRate: " , successRate*100 )
 
-            
+            /*
             const userData = {
-                user_handle : placeHolder,
+                user_handler : placeHolder,
                 currentRating : currentData.rating ?? 0,
                 maxRating : currentData.maxRating ?? 0,
                 successRate : successRate.toFixed(2),
@@ -153,8 +174,33 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                 strongTopics: strongTopics.map(([topic]) => topic),
                 difficultyStats : difficultyStats,
             }
+*/
+            const finalRow = Object.values(problemAttempts).map(p => ({
+                problem_id: p.problem_id,
+                user_handler: p.user_handler,
+                rating: p.rating,
+                topics: p.topics,
+                attempts: p.attempts,
+                solved: p.solved,
+                topicsSkill: p.topicsSkill,
+                creationTime: p.creationTime,
+                problem_ratingAvailable: p.rating == undefined ? false : true,
+                problem_topicsAvailable: p.topics.length == 1 && p.topics[0] == "none" ? false : true,
+                user_currentRating: currentData.rating ?? 0,
+                user_maxRating: currentData.maxRating ?? 0,
+                user_successRate: successRate.toFixed(2),
+                user_strongTopics: strongTopics.map(([topic]) => topic),
+                user_weakTopics: weakTopics.map(([topic]) => topic),
+                user_easy: difficultyStats.easy,
+                user_medium: difficultyStats.medium,
+                user_hard: difficultyStats.hard,
+                user_ratingNotAvailable: difficultyStats.ratingNotAvailable,
+            }));
 
-            console.log(userData)
+            console.log(finalRow)
+
+            const dataset = finalRow.map(formatCSV).join(""); // Convert each object to a CSV row
+            await fs.appendFile(csvPath, dataset, "utf-8"); // Append all rows to the file
 
         })
     );
@@ -164,3 +210,4 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
 
     await delay(500); // ⏳ Wait before starting the next batch
 }
+
