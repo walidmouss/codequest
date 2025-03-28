@@ -184,7 +184,7 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                 solved: p.solved,
                 topicsSkill: p.topicsSkill,
                 creationTime: p.creationTime,
-                problem_ratingAvailable: p.rating == undefined ? false : true,
+                problem_ratingAvailable: p.rating == 0 ? false : true,
                 problem_topicsAvailable: p.topics.length == 1 && p.topics[0] == "none" ? false : true,
                 user_currentRating: currentData.rating ?? 0,
                 user_maxRating: currentData.maxRating ?? 0,
@@ -197,7 +197,7 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
                 user_ratingNotAvailable: difficultyStats.ratingNotAvailable,
             }));
 
-            console.log(finalRow)
+            //console.log(finalRow)
 
             const dataset = finalRow.map(formatCSV).join(""); // Convert each object to a CSV row
             await fs.appendFile(csvPath, dataset, "utf-8"); // Append all rows to the file
