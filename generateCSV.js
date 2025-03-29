@@ -61,10 +61,11 @@ for (let i = 0; i < handlersList.length; i += batchSize) {
 
     await Promise.all(
         batch.map(async (placeHolder) => {
-            var total_no_of_trials = 0
-            const problemAttempts = {};
 
             console.log("Sending handler:", placeHolder);
+            
+            var total_no_of_trials = 0
+            const problemAttempts = {};
             progress.topicsSolved = {};
 
             try {

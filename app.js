@@ -1,11 +1,14 @@
 import axios from "axios";
 import express from "express";
-import { readFile , writeFile  } from 'fs/promises';
-
+import { readFile , writeFile } from 'fs/promises';
+import fs from "fs/promises";
 
 const app = express();
 app.use(express.json());
 
+
+const cachePath = './data/cacheFile.json'
+const recommendProblemPath = './data/recommendedProblem.json'
 
 app.get("/randProblem" , async (req,res) =>{
 
@@ -56,15 +59,6 @@ app.post("/userDetails", async (req, res) => {
     const { handler } = req.body;
 
 
-    const ProgressPath = './data/progress.json'
-    const file2 = await readFile(ProgressPath , 'utf-8');
-    const progress = JSON.parse(file2);
-
-    
-    const problemsPath = './data/problems.json'
-    const file = await readFile(problemsPath , 'utf-8');
-    const problemsFile = JSON.parse(file);
-    
 
     try {
         const response = await axios.get(
@@ -178,6 +172,7 @@ app.post("/fetchDataset" , async(req,res)=>{
     }
 });
 
+var userRating = 0
 
 app.post("/handlerData" , async(req,res)=>{
     const { handler } = req.body;
@@ -193,5 +188,221 @@ app.post("/handlerData" , async(req,res)=>{
     res.json(userData);
     //const response = await axios get(``)
 })
+
+
+//we're using this frequently after we've trained the model
+app.post("/handlerFullData" , async(req,res)=>{
+
+    const progressPath = "./data/progress.json";
+    const progressFile = await fs.readFile(progressPath, "utf-8");
+    const progress = JSON.parse(progressFile);
+    
+    const { handler } = req.body;
+    
+    const problemsPath = './data/problems.json'
+    const file = await readFile(problemsPath , 'utf-8');
+    const problemsFile = JSON.parse(file);
+
+
+    
+    var total_no_of_trials = 0
+    const problemAttempts = {};
+
+    try {
+        const response = await fetch("http://localhost:3000/userDetails", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ handler: handler }),
+        });
+
+        const problems = await response.json();
+        for (let j = 0; j < problems.length; j++) {
+            total_no_of_trials++
+            let currentProblem = problems[j];
+            let problemId = currentProblem.id;
+            let skillPoints = 0;
+            let topicsCount = 0;
+
+            if (!problemAttempts[problemId]) {
+                problemAttempts[problemId] = {
+                    problem_id: problemId,
+                    user_handler: handler,
+                    rating: currentProblem.rating,
+                    topics: currentProblem.topics,
+                    attempts: 0,
+                    solved: false,
+                };
+            }
+
+            problemAttempts[problemId].attempts++; // Count each submission
+            if (currentProblem.solved) {
+                problemAttempts[problemId].solved = true; // Keep only final result
+
+                problemAttempts[problemId].topics.forEach(topic => {
+                    skillPoints += (progress.topicsSolved[topic] || 0);
+                    topicsCount++;
+                    progress.topicsSolved[topic] = (progress.topicsSolved[topic] || 0) + 1;
+                });
+            }
+
+            // Compute average skill points for this problem
+            problemAttempts[problemId].topicsSkill = topicsCount > 0 ? skillPoints / topicsCount : 0;
+            problemAttempts[problemId].creationTime = currentProblem.creationTime;
+            if (!problemAttempts[problemId].rating){
+                problemAttempts[problemId].rating = 0;
+                problemAttempts[problemId].ratingNotAvailable = false
+            }
+            if (!problemAttempts[problemId].topics || problemAttempts[problemId].topics.length === 0) 
+                problemAttempts[problemId].topics = ["none"];
+        }
+
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+
+    let difficultyStats = { easy: 0, medium: 0, hard: 0, ratingNotAvailable:0 };
+    Object.values(problemAttempts).forEach(p => { 
+        if(p.rating <= 1400 && p.rating != 0)
+            difficultyStats["easy"] ++
+        else if(p.rating <= 1800 && p.rating != 0)
+            difficultyStats["medium"] ++
+        else if(p.rating > 1800)
+            difficultyStats["hard"] ++
+        else
+            difficultyStats["ratingNotAvailable"] ++
+    });
+
+    // here we're going to get user data such as current rating
+    const response = await axios.get(
+        `https://codeforces.com/api/user.info?handles=${handler}&checkHistoricHandles=false`
+    );
+    const currentData = response.data.result[0]
+
+    //console.log(difficultyStats);
+
+    const strongTopics = Object.entries(progress.topicsSolved)
+    .sort((a, b) => b[1] - a[1]) // sort by count descending
+    .slice(0, 3); // take the top 3
+    //console.log("top 3 topics:", strongTopics);
+
+
+    const weakTopics = Object.entries(progress.topicsSolved)
+    .filter(([topic, attempts]) => attempts >= 3) // Ignore rare topics
+    .sort((a, b) => a[1] - b[1]) // sort by count descending
+    .slice(0, 3); // take the top 3
+    //console.log("weakest 3 topics:", weakTopics);
+    
+      
+    
+    
+    const successRate = Object.keys(problemAttempts).length / total_no_of_trials
+    //console.log("successRate: " , successRate*100 )
+
+    const finalData = Object.values(problemAttempts).map(p => ({
+        problem_id: p.problem_id,
+        user_handler: p.user_handler,
+        rating: p.rating,
+        topics: p.topics,
+        attempts: p.attempts,
+        solved: p.solved,
+        topicsSkill: p.topicsSkill,
+        creationTime: p.creationTime,
+        problem_ratingAvailable: p.rating == 0 ? false : true,
+        problem_topicsAvailable: p.topics.length == 1 && p.topics[0] == "none" ? false : true,
+        user_currentRating: currentData.rating ?? 0,
+        user_maxRating: currentData.maxRating ?? 0,
+        user_successRate: successRate.toFixed(2),
+        user_strongTopics: strongTopics.map(([topic]) => topic),
+        user_weakTopics: weakTopics.map(([topic]) => topic),
+        user_easy: difficultyStats.easy,
+        user_medium: difficultyStats.medium,
+        user_hard: difficultyStats.hard,
+        user_ratingNotAvailable: difficultyStats.ratingNotAvailable,
+    }));
+    progress.handler = handler
+    progress.totalSolved = Object.keys(problemAttempts).length
+    progress.successRate = successRate.toFixed(2)
+    progress.difficultyCount["Easy"] = difficultyStats.easy
+    progress.difficultyCount["Medium"] = difficultyStats.medium
+    progress.difficultyCount["Hard"] = difficultyStats.hard
+    progress.difficultyCount["undefined"] = difficultyStats.ratingNotAvailable
+    progress.maximum_rating = currentData.maxRating ?? 0
+    progress.current_rating = currentData.rating ?? 0
+
+    problemsFile.push(...finalData);// push the contents of finalData into problems file
+    await writeFile(problemsPath, JSON.stringify(problemsFile, null, 2));
+    await writeFile(progressPath, JSON.stringify(progress, null, 2));
+    res.json(finalData)
+
+})
+
+app.post( "/allProblems" , async (req,res)=>{
+
+    try {
+        const response = await axios.get(
+            ` https://codeforces.com/api/problemset.problems`
+        );
+
+        if (response.data.status === 'OK') {
+            await writeFile(cachePath, JSON.stringify(response.data.result.problems, null, 2));
+            res.status(200).send('problems cached successfully!');
+        } else {
+            res.status(500).send('failed to fetch problems');
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error.message);
+        res.status(500).send(`Error fetching data: ${error.message}`);
+    }
+
+})
+
+app.post( "/formatProblems" , async (req,res)=>{
+
+
+    const file3 = await readFile(cachePath , 'utf-8');
+    const cacheFile = JSON.parse(file3);
+
+    cacheFile.forEach(p =>{
+
+        
+        const strongTopics = Object.entries(progress.topicsSolved)
+        .sort((a, b) => b[1] - a[1]) // sort by count descending
+        .slice(0, 3); // take the top 3
+        //console.log("top 3 topics:", strongTopics);
+
+
+        const weakTopics = Object.entries(progress.topicsSolved)
+        .filter(([topic, attempts]) => attempts >= 3) // Ignore rare topics
+        .sort((a, b) => a[1] - b[1]) // sort by count descending
+        .slice(0, 3); // take the top 3
+        //console.log("weakest 3 topics:", weakTopics);
+        
+          
+        
+        const problem = {
+            problem_id: `${p.contestId}-${p.index}` ,
+            user_handler: handler,
+            rating: p.rating ?? 0,
+            topics: p.tags, //make sure this is a string not an array
+            topicsSkill: p.topicsSkill,
+            creationTime: p.creationTime,
+            problem_ratingAvailable: p.rating == 0 ? false : true,
+            problem_topicsAvailable: p.topics.length == 1 && p.topics[0] == "none" ? false : true,
+            user_currentRating: currentData.rating ?? 0,
+            user_maxRating: currentData.maxRating ?? 0,
+            user_successRate: successRate.toFixed(2),
+            user_strongTopics: strongTopics.map(([topic]) => topic),
+            user_weakTopics: weakTopics.map(([topic]) => topic),
+            user_easy: difficultyStats.easy,
+            user_medium: difficultyStats.medium,
+            user_hard: difficultyStats.hard,
+            user_ratingNotAvailable: difficultyStats.ratingNotAvailable,
+        }
+
+    })
+
+})
+
+
 
 app.listen(3000, () => console.log("Server running on port 3000"));

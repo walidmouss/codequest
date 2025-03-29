@@ -95,7 +95,8 @@ async function login(){
     const ans = await inquirer.prompt(questions[7])
     const handler = ans.login
     console.log("Sending handler:", handler);
-    fetch("http://localhost:3000/userDetails", {
+    console.log("please wait for a few seconds ...");
+    fetch("http://localhost:3000/handlerFullData", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ handler })
@@ -103,9 +104,9 @@ async function login(){
     .then(response => {
         return response.json();
     })
-    .then(data => {
+    /*.then(data => {
         console.log(" Response:", data);
-    })
+    })*/
     .catch(error => console.error("Error:", error));
 }
 async function loadProblem(){
