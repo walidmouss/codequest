@@ -2,13 +2,19 @@ import axios from "axios";
 import express from "express";
 import { readFile , writeFile } from 'fs/promises';
 import fs from "fs/promises";
+import path from 'path'
+import {exec} from 'child_process'
+import { fileURLToPath } from 'url';
+
+
+
 
 const app = express();
 app.use(express.json());
 
 
 const cachePath = './data/cacheFile.json'
-const recommendProblemPath = './data/recommendedProblem.json'
+const recommendProblemPath = './data/recommended.json'
 
 app.get("/randProblem" , async (req,res) =>{
 
@@ -311,7 +317,7 @@ app.post("/handlerFullData" , async(req,res)=>{
         problem_topicsAvailable: p.topics.length == 1 && p.topics[0] == "none" ? false : true,
         user_currentRating: currentData.rating ?? 0,
         user_maxRating: currentData.maxRating ?? 0,
-        user_successRate: successRate.toFixed(2),
+        user_successRate: Number(successRate.toFixed(2)),
         user_strongTopics: strongTopics.map(([topic]) => topic),
         user_weakTopics: weakTopics.map(([topic]) => topic),
         user_easy: difficultyStats.easy,
@@ -356,9 +362,17 @@ app.post( "/allProblems" , async (req,res)=>{
 
 })
 
-app.post( "/formatProblems" , async (req,res)=>{
+app.post( "/formatProblems" , async(req,res)=>{
 
 
+    const progressPath = "./data/progress.json";
+    const progressFile = await fs.readFile(progressPath, "utf-8");
+    const progress = JSON.parse(progressFile);
+    
+    const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
+    const recommendProblem = JSON.parse(recommendProblemFile);
+
+    
     const file3 = await readFile(cachePath , 'utf-8');
     const cacheFile = JSON.parse(file3);
 
@@ -377,32 +391,129 @@ app.post( "/formatProblems" , async (req,res)=>{
         .slice(0, 3); // take the top 3
         //console.log("weakest 3 topics:", weakTopics);
         
-          
+        var topicsPoints = 0
+        var topicsCounter = 0
+        var topicsSkillPoints = 0
+        if(p.tags){
+            p.tags.forEach(topic =>{
+                if(progress.topicsSolved[topic]){
+                    topicsPoints += progress.topicsSolved[topic]
+                }
+                topicsCounter ++
+            })
+            topicsSkillPoints = topicsPoints / topicsCounter
+        }
         
         const problem = {
             problem_id: `${p.contestId}-${p.index}` ,
-            user_handler: handler,
+            user_handler: progress.handler,
             rating: p.rating ?? 0,
-            topics: p.tags, //make sure this is a string not an array
-            topicsSkill: p.topicsSkill,
-            creationTime: p.creationTime,
-            problem_ratingAvailable: p.rating == 0 ? false : true,
-            problem_topicsAvailable: p.topics.length == 1 && p.topics[0] == "none" ? false : true,
-            user_currentRating: currentData.rating ?? 0,
-            user_maxRating: currentData.maxRating ?? 0,
-            user_successRate: successRate.toFixed(2),
-            user_strongTopics: strongTopics.map(([topic]) => topic),
-            user_weakTopics: weakTopics.map(([topic]) => topic),
-            user_easy: difficultyStats.easy,
-            user_medium: difficultyStats.medium,
-            user_hard: difficultyStats.hard,
-            user_ratingNotAvailable: difficultyStats.ratingNotAvailable,
+            topics: p.tags ? p.tags.join(',') : ["none"], //make sure this is a string not an array
+            attempts: 0,
+            solved : false,
+            topicsSkill: topicsSkillPoints,
+            creationTime: undefined,
+            problem_ratingAvailable: p.rating && p.rating != 0 ? true : false,
+            problem_topicsAvailable: p.tags.length == 0 ? false : true,
+            user_currentRating: progress.current_rating,
+            user_maxRating: progress.maximum_rating,
+            user_successRate: progress.successRate,
+            user_strongTopics: strongTopics.map(([topic]) => topic).join(';'),
+            user_weakTopics: weakTopics.map(([topic]) => topic).join(';'),
+            user_easy: progress.difficultyCount["Easy"],
+            user_medium: progress.difficultyCount["Medium"],
+            user_hard: progress.difficultyCount["Hard"],
+            user_ratingNotAvailable: progress.difficultyCount["undefined"],
+            prediction : 0
         }
 
+        recommendProblem.push(problem)
+
     })
+    await fs.writeFile(recommendProblemPath, JSON.stringify(recommendProblem, null, 4));
+    console.log(`Memory Usage: ${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)} MB`);
+    res.status(200).send("Problems formatted successfully!");
+    console.log("Number of problems to write:", recommendProblem.length);
+
+
+
+})
+
+app.get("/makePrediction" , async (req , res)=>{
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+    const scriptPath =path.join(__dirname, './ml/predict.py')
+
+    
+    const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
+    const recommendProblem = JSON.parse(recommendProblemFile);
+
+
+    exec(`python ${scriptPath}`, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing script: ${error.message}`);
+            res.status(500).send('Error executing prediction script.');
+            return;
+        }
+        if (stderr) {
+            console.error(`Error output: ${stderr}`);
+            res.status(500).send('Prediction script ran with errors.');
+            return;
+        }
+        console.log(`Output: ${stdout}`);
+        res.send('Prediction script executed successfully!');
+    });
+    
+//AFTER EXECUTING THIS IT WILL GIVE YOU AN ERROR IGNORE IT 
 
 })
 
 
+app.get("/populatePrediction" , async (req , res)=>{
+
+
+    const predictionPath = "./data/predictions.json";
+    const predictionFile = await fs.readFile(predictionPath, "utf-8");
+    const prediction = JSON.parse(predictionFile);
+
+
+    const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
+    const recommendProblem = JSON.parse(recommendProblemFile);
+
+    for(let i=0 ; i<prediction.length ; i++){
+        recommendProblem[i].prediction = prediction[i]
+    }
+    recommendProblem.sort((a, b) => b.prediction - a.prediction);
+    await fs.writeFile(recommendProblemPath, JSON.stringify(recommendProblem, null, 4));
+
+    res.send("population completed successfully!");
+})
+
+
+app.get("/returnProblem" , async (req , res)=>{
+
+    
+    const problemsPath = './data/problems.json'
+    const file = await readFile(problemsPath , 'utf-8');
+    const problemsFile = JSON.parse(file);
+
+    const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
+    const recommendProblem = JSON.parse(recommendProblemFile);
+
+
+    const problemIds = new Set(problemsFile.map(problem => problem.problem_id));
+    //Filter recommendedProblems (between 0.6 and 0.7 and not attempted)
+
+    const filteredProblems = recommendProblem.filter(problem => 
+        problem.prediction >= 0.5 &&
+        problem.prediction <= 0.75 &&
+        !problemIds.has(problem.id)
+    );
+    
+    
+    const randomNumber = Math.floor(Math.random() * filteredProblems.length);
+    
+    res.json(filteredProblems[randomNumber])
+
+})
 
 app.listen(3000, () => console.log("Server running on port 3000"));

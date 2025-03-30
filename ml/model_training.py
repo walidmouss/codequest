@@ -9,11 +9,14 @@ df = pd.read_csv('cleaned_data.csv')
 
 # let lightGBM know which features are categorical
 categorical_features = ['topics' , 'user_strongTopics' , 'user_weakTopics']
+for feature in categorical_features:
+    df[feature] = df[feature].astype('category')
+
 
 #print(df[['topics', 'user_strongTopics', 'user_weakTopics']].dtypes)
 
 y = df['solved']
-X = df.drop(['solved' , 'problem_id' , 'user_handler'], axis=1) # dropped the problemid and handler because model wont learn from them
+X = df.drop(['solved' , 'problem_id' , 'user_handler' , 'creationTime' , 'attempts'], axis=1) # dropped the problemid and handler because model wont learn from them
 
 
 #this splits data to 4 parts ... 2 for test and 2 for training
@@ -51,7 +54,7 @@ loss = log_loss(y_test, y_pred_prob)
 print(f"Accuracy: {accuracy * 100:.2f}%") # gets me the accuracy of model as percentage to 2 decimal places
 print(f"AUC: {auc:.4f}")
 print(f"Log Loss: {loss:.4f}")
-
+print(X_train.dtypes)
 
 # Save the model to a file
 model.save_model('trained_model.txt')

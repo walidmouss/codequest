@@ -1,7 +1,7 @@
 {
   "current_rating": 354,
   "maximum_rating": 354,
-  "successRate": "0.43",
+  "successRate": 0.43,
   "totalSolved": 59,
   "difficultyCount": {
     "Easy": 29,
