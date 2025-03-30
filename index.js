@@ -108,6 +108,7 @@ async function login(){
         console.log(" Response:", data);
     })*/
     .catch(error => console.error("Error:", error));
+    ask()
 }
 async function loadProblem(){
     try{
@@ -150,9 +151,12 @@ async function goToLink(url){
 }
 async function addProblem(){
     try{
+        
         const file = await readFile(filePath, 'utf-8');
         const problems = JSON.parse(file);
         
+        
+
         const newProblem = await axios.get("http://localhost:3000/randProblem");
         console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
         console.log("ID:         " , newProblem.data.id);

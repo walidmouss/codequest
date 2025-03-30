@@ -371,7 +371,7 @@ app.post( "/formatProblems" , async(req,res)=>{
     
     const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
     const recommendProblem = JSON.parse(recommendProblemFile);
-
+    recommendProblem = []
     
     const file3 = await readFile(cachePath , 'utf-8');
     const cacheFile = JSON.parse(file3);

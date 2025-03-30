@@ -1,7 +1,7 @@
 {
   "current_rating": 354,
   "maximum_rating": 354,
-  "successRate": 0.43,
+  "successRate": "0.43",
   "totalSolved": 59,
   "difficultyCount": {
     "Easy": 29,
@@ -10,16 +10,16 @@
     "undefined": 28
   },
   "topicsSolved": {
-    "strings": 7,
-    "implementation": 16,
-    "brute force": 6,
-    "greedy": 7,
-    "data structures": 1,
-    "hashing": 1,
-    "sortings": 4,
-    "constructive algorithms": 2,
-    "none": 12,
-    "math": 4
+    "strings": 14,
+    "implementation": 32,
+    "brute force": 12,
+    "greedy": 14,
+    "data structures": 2,
+    "hashing": 2,
+    "sortings": 8,
+    "constructive algorithms": 4,
+    "none": 24,
+    "math": 8
   },
   "handler": "walid_moussa"
 }

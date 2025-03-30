@@ -1865,5 +1865,3739 @@
     "user_medium": 2,
     "user_hard": 0,
     "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "4-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "math"
+    ],
+    "attempts": 3,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1620419507,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "71-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "strings"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1620419453,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "281-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0.5,
+    "creationTime": 1620772817,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "266-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 1,
+    "creationTime": 1620825143,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "236-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 1.3333333333333333,
+    "creationTime": 1620825200,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "282-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1620825258,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "231-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "greedy"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0.5,
+    "creationTime": 1620825313,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "546-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "implementation",
+      "math"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1620826183,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1819-A",
+    "user_handler": "walid_moussa",
+    "rating": 1300,
+    "topics": [
+      "brute force",
+      "greedy"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682114777,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1807-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 3,
+    "creationTime": 1682115665,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1807-B",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "greedy"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682203146,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1807-C",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "greedy",
+      "implementation",
+      "strings"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 2.6666666666666665,
+    "creationTime": 1682274024,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "855-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 3.6666666666666665,
+    "creationTime": 1682278688,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "4-C",
+    "user_handler": "walid_moussa",
+    "rating": 1300,
+    "topics": [
+      "data structures",
+      "hashing",
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 2,
+    "creationTime": 1682279843,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "918-B",
+    "user_handler": "walid_moussa",
+    "rating": 900,
+    "topics": [
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 6,
+    "creationTime": 1682281636,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "66-B",
+    "user_handler": "walid_moussa",
+    "rating": 1100,
+    "topics": [
+      "brute force",
+      "implementation"
+    ],
+    "attempts": 4,
+    "solved": true,
+    "topicsSkill": 5.5,
+    "creationTime": 1682527208,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "519-D",
+    "user_handler": "walid_moussa",
+    "rating": 1800,
+    "topics": [
+      "data structures",
+      "dp",
+      "two pointers"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682543760,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "677-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 9,
+    "creationTime": 1682551469,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "734-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation",
+      "strings"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 8,
+    "creationTime": 1682551822,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "6-B",
+    "user_handler": "walid_moussa",
+    "rating": 1100,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682553411,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "102-B",
+    "user_handler": "walid_moussa",
+    "rating": 1000,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 8,
+    "solved": true,
+    "topicsSkill": 11,
+    "creationTime": 1682559235,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "152-B",
+    "user_handler": "walid_moussa",
+    "rating": 1300,
+    "topics": [
+      "binary search",
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682574954,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "16-B",
+    "user_handler": "walid_moussa",
+    "rating": 900,
+    "topics": [
+      "greedy",
+      "implementation",
+      "sortings"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 5.666666666666667,
+    "creationTime": 1682585365,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "479-B",
+    "user_handler": "walid_moussa",
+    "rating": 1400,
+    "topics": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "sortings"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 4.8,
+    "creationTime": 1682689185,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104270-M",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 4,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1683201422,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104270-J",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 8,
+    "solved": true,
+    "topicsSkill": 1,
+    "creationTime": 1683209709,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104270-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1683216118,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "580-C",
+    "user_handler": "walid_moussa",
+    "rating": 1500,
+    "topics": [
+      "dfs and similar",
+      "graphs",
+      "trees"
+    ],
+    "attempts": 4,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1688154622,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104447-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1688734691,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104447-L",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1688746243,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104289-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 5,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689007370,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104289-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 2,
+    "creationTime": 1689005601,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104393-F",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1689168880,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104393-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 4,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689176604,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104393-D",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 3,
+    "creationTime": 1689170170,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1689861529,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689863133,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-F",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1689865184,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-G",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689867949,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-H",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689871830,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1853-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "greedy",
+      "math"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1690126738,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-B",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1690651509,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-H",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 4,
+    "creationTime": 1690653005,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 8,
+    "creationTime": 1690665144,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-M",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 5,
+    "creationTime": 1690654524,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-D",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 4,
+    "solved": true,
+    "topicsSkill": 6,
+    "creationTime": 1690657688,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-J",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 6,
+    "solved": true,
+    "topicsSkill": 9,
+    "creationTime": 1690666430,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-I",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1690659366,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-K",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 5,
+    "solved": true,
+    "topicsSkill": 7,
+    "creationTime": 1690663961,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-J",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 10,
+    "creationTime": 1691164587,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-B",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 11,
+    "creationTime": 1691165503,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1691165389,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-D",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1691169302,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1691346868,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1016-A",
+    "user_handler": "walid_moussa",
+    "rating": 900,
+    "topics": [
+      "greedy",
+      "implementation",
+      "math"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 6.666666666666667,
+    "creationTime": 1691776040,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1108-D",
+    "user_handler": "walid_moussa",
+    "rating": 1400,
+    "topics": [
+      "constructive algorithms",
+      "dp",
+      "greedy"
+    ],
+    "attempts": 3,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1692033902,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1-A",
+    "user_handler": "walid_moussa",
+    "rating": 1000,
+    "topics": [
+      "math"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 1,
+    "creationTime": 1714693977,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1204-A",
+    "user_handler": "walid_moussa",
+    "rating": 1000,
+    "topics": [
+      "math"
+    ],
+    "attempts": 6,
+    "solved": true,
+    "topicsSkill": 2,
+    "creationTime": 1714741723,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1992-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "sortings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 3.6,
+    "creationTime": 1720892725,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "sortings",
+      "math",
+      "brute force"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "4-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "math"
+    ],
+    "attempts": 3,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1620419507,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "71-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "strings"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 7,
+    "creationTime": 1620419453,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "281-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 12,
+    "creationTime": 1620772817,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "266-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 17,
+    "creationTime": 1620825143,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "236-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 11,
+    "creationTime": 1620825200,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "282-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1620825258,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "231-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "greedy"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 7,
+    "creationTime": 1620825313,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "546-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "implementation",
+      "math"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1620826183,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1819-A",
+    "user_handler": "walid_moussa",
+    "rating": 1300,
+    "topics": [
+      "brute force",
+      "greedy"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682114777,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1807-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 19,
+    "creationTime": 1682115665,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1807-B",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "greedy"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682203146,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1807-C",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "greedy",
+      "implementation",
+      "strings"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 12.666666666666666,
+    "creationTime": 1682274024,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "855-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 13.333333333333334,
+    "creationTime": 1682278688,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "4-C",
+    "user_handler": "walid_moussa",
+    "rating": 1300,
+    "topics": [
+      "data structures",
+      "hashing",
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 8,
+    "creationTime": 1682279843,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "918-B",
+    "user_handler": "walid_moussa",
+    "rating": 900,
+    "topics": [
+      "implementation",
+      "strings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 17.5,
+    "creationTime": 1682281636,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "66-B",
+    "user_handler": "walid_moussa",
+    "rating": 1100,
+    "topics": [
+      "brute force",
+      "implementation"
+    ],
+    "attempts": 4,
+    "solved": true,
+    "topicsSkill": 16.5,
+    "creationTime": 1682527208,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "519-D",
+    "user_handler": "walid_moussa",
+    "rating": 1800,
+    "topics": [
+      "data structures",
+      "dp",
+      "two pointers"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682543760,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "677-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 25,
+    "creationTime": 1682551469,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "734-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "implementation",
+      "strings"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 19.5,
+    "creationTime": 1682551822,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "6-B",
+    "user_handler": "walid_moussa",
+    "rating": 1100,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682553411,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "102-B",
+    "user_handler": "walid_moussa",
+    "rating": 1000,
+    "topics": [
+      "implementation"
+    ],
+    "attempts": 8,
+    "solved": true,
+    "topicsSkill": 27,
+    "creationTime": 1682559235,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "152-B",
+    "user_handler": "walid_moussa",
+    "rating": 1300,
+    "topics": [
+      "binary search",
+      "implementation"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1682574954,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "16-B",
+    "user_handler": "walid_moussa",
+    "rating": 900,
+    "topics": [
+      "greedy",
+      "implementation",
+      "sortings"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 14.666666666666666,
+    "creationTime": 1682585365,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "479-B",
+    "user_handler": "walid_moussa",
+    "rating": 1400,
+    "topics": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "sortings"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 11.8,
+    "creationTime": 1682689185,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104270-M",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 4,
+    "solved": true,
+    "topicsSkill": 12,
+    "creationTime": 1683201422,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104270-J",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 8,
+    "solved": true,
+    "topicsSkill": 13,
+    "creationTime": 1683209709,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104270-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1683216118,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "580-C",
+    "user_handler": "walid_moussa",
+    "rating": 1500,
+    "topics": [
+      "dfs and similar",
+      "graphs",
+      "trees"
+    ],
+    "attempts": 4,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1688154622,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104447-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1688734691,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104447-L",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1688746243,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104289-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 5,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689007370,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104289-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 14,
+    "creationTime": 1689005601,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104393-F",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1689168880,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104393-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 4,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689176604,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104393-D",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 15,
+    "creationTime": 1689170170,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1689861529,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689863133,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-F",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1689865184,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-G",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689867949,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "104381-H",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1689871830,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1853-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "greedy",
+      "math"
+    ],
+    "attempts": 2,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1690126738,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-B",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1690651509,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-H",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 16,
+    "creationTime": 1690653005,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 20,
+    "creationTime": 1690665144,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-M",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 17,
+    "creationTime": 1690654524,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-D",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 4,
+    "solved": true,
+    "topicsSkill": 18,
+    "creationTime": 1690657688,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-J",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 6,
+    "solved": true,
+    "topicsSkill": 21,
+    "creationTime": 1690666430,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-I",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1690659366,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "101350-K",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 5,
+    "solved": true,
+    "topicsSkill": 19,
+    "creationTime": 1690663961,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-J",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 22,
+    "creationTime": 1691164587,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-B",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 23,
+    "creationTime": 1691165503,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-A",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1691165389,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-D",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 0,
+    "creationTime": 1691169302,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "103373-C",
+    "user_handler": "walid_moussa",
+    "rating": 0,
+    "topics": [
+      "none"
+    ],
+    "attempts": 1,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1691346868,
+    "problem_ratingAvailable": false,
+    "problem_topicsAvailable": false,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1016-A",
+    "user_handler": "walid_moussa",
+    "rating": 900,
+    "topics": [
+      "greedy",
+      "implementation",
+      "math"
+    ],
+    "attempts": 2,
+    "solved": true,
+    "topicsSkill": 15.666666666666666,
+    "creationTime": 1691776040,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1108-D",
+    "user_handler": "walid_moussa",
+    "rating": 1400,
+    "topics": [
+      "constructive algorithms",
+      "dp",
+      "greedy"
+    ],
+    "attempts": 3,
+    "solved": false,
+    "topicsSkill": 0,
+    "creationTime": 1692033902,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1-A",
+    "user_handler": "walid_moussa",
+    "rating": 1000,
+    "topics": [
+      "math"
+    ],
+    "attempts": 3,
+    "solved": true,
+    "topicsSkill": 5,
+    "creationTime": 1714693977,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1204-A",
+    "user_handler": "walid_moussa",
+    "rating": 1000,
+    "topics": [
+      "math"
+    ],
+    "attempts": 6,
+    "solved": true,
+    "topicsSkill": 6,
+    "creationTime": 1714741723,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
+  },
+  {
+    "problem_id": "1992-A",
+    "user_handler": "walid_moussa",
+    "rating": 800,
+    "topics": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "sortings"
+    ],
+    "attempts": 1,
+    "solved": true,
+    "topicsSkill": 8.2,
+    "creationTime": 1720892725,
+    "problem_ratingAvailable": true,
+    "problem_topicsAvailable": true,
+    "user_currentRating": 354,
+    "user_maxRating": 354,
+    "user_successRate": 0.43,
+    "user_strongTopics": [
+      "implementation",
+      "none",
+      "strings"
+    ],
+    "user_weakTopics": [
+      "constructive algorithms",
+      "sortings",
+      "math"
+    ],
+    "user_easy": 29,
+    "user_medium": 2,
+    "user_hard": 0,
+    "user_ratingNotAvailable": 28
   }
 ]
