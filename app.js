@@ -362,7 +362,7 @@ app.post( "/allProblems" , async (req,res)=>{
 
 })
 
-app.post( "/formatProblems" , async(req,res)=>{
+app.get( "/formatProblems" , async(req,res)=>{
 
 
     const progressPath = "./data/progress.json";
@@ -370,7 +370,7 @@ app.post( "/formatProblems" , async(req,res)=>{
     const progress = JSON.parse(progressFile);
     
     const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
-    const recommendProblem = JSON.parse(recommendProblemFile);
+    let recommendProblem = JSON.parse(recommendProblemFile);
     recommendProblem = []
     
     const file3 = await readFile(cachePath , 'utf-8');
@@ -417,7 +417,7 @@ app.post( "/formatProblems" , async(req,res)=>{
             problem_topicsAvailable: p.tags.length == 0 ? false : true,
             user_currentRating: progress.current_rating,
             user_maxRating: progress.maximum_rating,
-            user_successRate: progress.successRate,
+            user_successRate: parseFloat(Number(progress.successRate).toFixed(2)),
             user_strongTopics: strongTopics.map(([topic]) => topic).join(';'),
             user_weakTopics: weakTopics.map(([topic]) => topic).join(';'),
             user_easy: progress.difficultyCount["Easy"],
@@ -426,7 +426,7 @@ app.post( "/formatProblems" , async(req,res)=>{
             user_ratingNotAvailable: progress.difficultyCount["undefined"],
             prediction : 0
         }
-
+        console.log(typeof parseFloat(Number(progress.successRate).toFixed(2)));
         recommendProblem.push(problem)
 
     })
@@ -489,7 +489,7 @@ app.get("/populatePrediction" , async (req , res)=>{
 })
 
 
-app.get("/returnProblem" , async (req , res)=>{
+app.post("/returnProblem" , async (req , res)=>{
 
     
     const problemsPath = './data/problems.json'

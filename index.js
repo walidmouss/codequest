@@ -9,6 +9,10 @@ import { json } from 'stream/consumers';
 import axios from 'axios';
 import open from 'open';
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 const questions = [
     {
         type : 'list',
@@ -155,9 +159,16 @@ async function addProblem(){
         const file = await readFile(filePath, 'utf-8');
         const problems = JSON.parse(file);
         
+        await axios.get("http://localhost:3000/formatProblems", { timeout: 60000 });
+        await sleep(2000); // Wait 1 second before next request
+        await axios.get("http://localhost:3000/makePrediction", { timeout: 60000 });
+        await sleep(2000); // Wait 1 second before next request
+        await axios.get("http://localhost:3000/populatePrediction", { timeout: 60000 });
+        await sleep(7000); // Wait 1 second before next request*/
+        let newProblem = await axios.post("http://localhost:3000/returnProblem", { timeout: 60000 });
         
-
-        const newProblem = await axios.get("http://localhost:3000/randProblem");
+        console.log(newProblem.data)
+        /*
         console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
         console.log("ID:         " , newProblem.data.id);
         console.log("Title:      " , newProblem.data.title);
@@ -199,7 +210,7 @@ async function addProblem(){
             if(sure.anotherOne == "No"){
                 ask();
             }
-        }
+        }*/
     }
     catch(error){
         console.log("error adding new problem : " + error);

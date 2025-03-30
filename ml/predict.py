@@ -1,10 +1,11 @@
 import pandas as pd
 import json
 import lightgbm as lgb
+import os
 
 # 1. Load the saved LightGBM model
 def load_model():
-    model = lgb.Booster(model_file='ml/trained_model.txt')
+    model = lgb.Booster(model_file=os.path.join(os.getcwd(), 'ml', 'trained_model.txt'))
     return model
 
 # 2. Read the input data from a JSON file
