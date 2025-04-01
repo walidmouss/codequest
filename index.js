@@ -223,7 +223,7 @@ async function  login(){
     
     ask()
 }
-/*
+
 async function loadProblem(){
     try{
         const file = await readFile(filePath, 'utf-8');
@@ -234,14 +234,16 @@ async function loadProblem(){
         }
         const unsolvedProbs = await problems.filter(p => !p.solved);
         var i = 0;
-        console.log("DEBUG: Problem Object ->", unsolvedProbs[i]);
+        //console.log("DEBUG: Problem Object ->", unsolvedProbs[i]);
+
 
         while(i<unsolvedProbs.length){
-            console.log(chalk.blue("ID:         "), unsolvedProbs[i].id);
-            console.log(chalk.magenta("Title:      "), unsolvedProbs[i].title);
-            console.log(chalk.cyan("Difficulty: "), unsolvedProbs[i].difficulty);
-            console.log(chalk.green("URL:        "), unsolvedProbs[i].url);
-            console.log(chalk.green("Topics:     "), unsolvedProbs[i].topics ? unsolvedProbs[i].topics.join(", ") : "No topics");
+            let [contestId, index] = unsolvedProbs[i].problem_id.split("-");
+            console.log(chalk.blue("ID:               "), unsolvedProbs[i].problem_id);
+            console.log(chalk.cyan("Difficulty:       "), unsolvedProbs[i].rating == 0 ? "Rating not available" : unsolvedProbs[i].rating );
+            console.log(chalk.green("URL:             "), `https://codeforces.com/contest/${contestId}/problem/${index}`);
+            console.log(chalk.green("Topics:          "), unsolvedProbs[i].topics.length > 0 ? unsolvedProbs[i].topics : "No topics");
+            console.log(chalk.green("solvability:     "), unsolvedProbs[i].prediction);
 
             console.log("\n---------------------------------------------");
             i++;
@@ -261,7 +263,6 @@ async function loadProblem(){
     }
 }
 
-*/
 
 async function goToLink(url){
     await open(url);
@@ -269,6 +270,8 @@ async function goToLink(url){
 
 async function addProblem(){
 
+    const file2 = await readFile(filePath, 'utf-8');
+    const problems = JSON.parse(file2);
 
     const progressPath = "./data/progress.json";
     const progressFile = await fs.readFile(progressPath, "utf-8");
@@ -300,92 +303,52 @@ async function addProblem(){
     const problemsFile = JSON.parse(file);
 
 
-        
-    const problemIds = new Set(problemsFile.map(problem => problem.problem_id));
-    //Filter recommendedProblems (between 0.6 and 0.7 and not attempted)
+    const problemIds = new Set(
+        problemsFile
+            .filter(problem => problem.solved === true) // Only include solved problems
+            .map(problem => problem.problem_id) // Extract their IDs
+    );
 
+    
     const filteredProblems = recommendProblem.filter(problem => 
         problem.prediction >= 0.5 &&
         problem.prediction <= 0.75 &&
-        !problemIds.has(problem.id)
+        !problemIds.has(problem.id) &&
+        problem.topics.length > 0
     );
     
     
     const randomNumber = Math.floor(Math.random() * filteredProblems.length);
-    
-    console.log(filteredProblems[randomNumber])
-    
-/*
-       try {
-        console.log("Sending request...");
-        const response = await axios.get('http://localhost:3000/makePrediction');
-        console.log("Response received:", response.data);
-      } catch (error) {
-        console.error("Request failed:", error);  // This prints the full error object.
-        console.error("Error details:", error.toJSON ? error.toJSON() : error); // JSON-formatted error details.
+    let currProblem = filteredProblems[randomNumber]
 
-        //await axios.get("http://localhost:3000/makePrediction", { timeout: 60000 });
-        //await sleep(2000); // Wait 1 second before next request
+    let [contestId, index] = currProblem.problem_id.split("-");
+    console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
+    console.log("ID:                                     " , currProblem.problem_id);
+    //console.log("Title:      " , newProblem.data.title);
+    console.log("Difficulty:                             " , currProblem.rating == 0 ? "Rating not available!" : currProblem.rating);
+    console.log("URL:                                    " , `https://codeforces.com/contest/${contestId}/problem/${index}`);
+    console.log("Problem topics:                         " , currProblem.topics.length > 0 ? currProblem.topics : "Topics not specified by website");
+    console.log("\n");
+    
+    const attempt = await inquirer.prompt(questions[2])
+    if(attempt.attempt_request == "Yes" ){
+        console.log(chalk.green("Great ... problem marked as attempting"))
+        problems.push(currProblem);
+        await writeFile(filePath, JSON.stringify(problems, null, 2));
 
-        try {
-            console.log("Sending request...");
-            const response = await axios.get('http://localhost:3000/populatePrediction');
-            console.log("Response received:", response.data);
-          } catch (error) {
-            console.error("Request failed:", error);  // This prints the full error object.
-            console.error("Error details:", error.toJSON ? error.toJSON() : error); // JSON-formatted error details.
-          }
-        //await axios.get("http://localhost:3000/populatePrediction", { timeout: 60000 });
-        //await sleep(7000); // Wait 1 second before next request*/
-        //let newProblem = await axios.post("http://localhost:3000/returnProblem", { timeout: 60000 });
         
-        //console.log(newProblem.data)
-        /*
-        console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
-        console.log("ID:         " , newProblem.data.id);
-        console.log("Title:      " , newProblem.data.title);
-        console.log("Difficulty: " , newProblem.data.difficulty);
-        console.log("URL         " , newProblem.data.url);
-        console.log("\n");
-        const attempt = await inquirer.prompt(questions[2])
-        if(attempt.attempt_request == "Yes" ){
-            console.log(chalk.green("Great ... problem marked as attempting"))
-            problems.push(newProblem.data);
-            await writeFile(filePath, JSON.stringify(problems, null, 2));
-
-            
-            console.log(chalk.green("🌐 Redirecting you to Codeforces... ")) 
-            await goToLink(newProblem.data.url);
+        console.log(chalk.green("🌐 Redirecting you to Codeforces... ")) 
+        await goToLink(`https://codeforces.com/contest/${contestId}/problem/${index}`);
+    }
+    else{
+        const sure = await inquirer.prompt(questions[3])
+        if(sure.anotherOne == "Yes"){
+            addProblem()
         }
-        else{
-            const sure = await inquirer.prompt(questions[3])
-            if(sure.anotherOne == "Yes"){
-                console.log(chalk.bold(chalk.yellow("\nHere is another recommended problem:")));
-                const newProblem = await axios.get("http://localhost:3000/randProblem");
-                console.log("ID:         " , newProblem.data.id);
-                console.log("Title:      " , newProblem.data.title);
-                console.log("Difficulty: " , newProblem.data.Difficulty);
-                console.log("URL         " , newProblem.data.url);
-                console.log("\n");
-                const attempt = await inquirer.prompt(questions[2])
-                if(attempt.attempt_request == "Yes" ){
-                    console.log(chalk.green("Great ... problem marked as attempting"))
-                    console.log(chalk.green("🌐 Redirecting you to Codeforces... ")) 
-                    problems.push(newProblem.data);
-                    await writeFile(filePath, JSON.stringify(problems, null, 2));
-                    await goToLink(newProblem.data.url);
-                }
-                else{
-                    const skip = await inquirer.prompt(questions[4])
-                }
-            }
-            if(sure.anotherOne == "No"){
-                ask();
-            }
+        if(sure.anotherOne == "No"){
+            ask();
         }
     }
-    catch(error){
-        console.log("error adding new problem : " + error);*/
     
 }
 

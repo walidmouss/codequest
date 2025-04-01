@@ -213,6 +213,8 @@ app.post("/handlerFullData" , async(req,res)=>{
     
     var total_no_of_trials = 0
     const problemAttempts = {};
+    problemsFile = []
+    progress.topicsSolved = {}
 
     try {
         const response = await fetch("http://localhost:3000/userDetails", {
@@ -266,6 +268,7 @@ app.post("/handlerFullData" , async(req,res)=>{
         console.error("Error fetching data:", error);
     }
 
+    
     let difficultyStats = { easy: 0, medium: 0, hard: 0, ratingNotAvailable:0 };
     Object.values(problemAttempts).forEach(p => { 
         if(p.rating <= 1400 && p.rating != 0)
