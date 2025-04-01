@@ -207,7 +207,7 @@ app.post("/handlerFullData" , async(req,res)=>{
     
     const problemsPath = './data/problems.json'
     const file = await readFile(problemsPath , 'utf-8');
-    const problemsFile = JSON.parse(file);
+    let problemsFile = JSON.parse(file);
 
 
     

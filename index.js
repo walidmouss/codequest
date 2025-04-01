@@ -220,7 +220,6 @@ async function  login(){
         console.log('Prediction script executed successfully!');
     });
 
-    
     ask()
 }
 

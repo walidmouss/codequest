@@ -1,25 +1,15 @@
 {
-  "current_rating": 354,
-  "maximum_rating": 354,
-  "successRate": "0.43",
-  "totalSolved": 59,
+  "current_rating": 0,
+  "maximum_rating": 0,
+  "successRate": 0,
+  "totalSolved": 0,
   "difficultyCount": {
-    "Easy": 29,
-    "Medium": 2,
+    "Easy": 0,
+    "Medium": 0,
     "Hard": 0,
-    "undefined": 28
+    "undefined": 0
   },
   "topicsSolved": {
-    "strings": 7,
-    "implementation": 16,
-    "brute force": 6,
-    "greedy": 7,
-    "data structures": 1,
-    "hashing": 1,
-    "sortings": 4,
-    "constructive algorithms": 2,
-    "none": 12,
-    "math": 4
   },
-  "handler": "walid_moussa"
+  "handler": "Place_holder"
 }
