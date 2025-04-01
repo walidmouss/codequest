@@ -426,16 +426,14 @@ app.get( "/formatProblems" , async(req,res)=>{
             user_ratingNotAvailable: progress.difficultyCount["undefined"],
             prediction : 0
         }
-        console.log(typeof parseFloat(Number(progress.successRate).toFixed(2)));
         recommendProblem.push(problem)
 
     })
     await fs.writeFile(recommendProblemPath, JSON.stringify(recommendProblem, null, 4));
-    console.log(`Memory Usage: ${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)} MB`);
+    console.log("Problems formatted successfully! Sending response...");
+        
     res.status(200).send("Problems formatted successfully!");
-    console.log("Number of problems to write:", recommendProblem.length);
-
-
+    console.log("Response sent successfully.");
 
 })
 

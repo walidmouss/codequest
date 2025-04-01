@@ -9,6 +9,19 @@ import { json } from 'stream/consumers';
 import axios from 'axios';
 import open from 'open';
 
+
+
+import fs from "fs/promises";
+import path from 'path'
+import {exec} from 'child_process'
+import { fileURLToPath } from 'url';
+
+
+const cachePath = './data/cacheFile.json'
+const recommendProblemPath = './data/recommended.json'
+
+
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -95,12 +108,12 @@ const ProgressPath = './data/progress.json'
 
 // reads json file from data folder to get problems
 
-async function login(){
+async function  login(){
     const ans = await inquirer.prompt(questions[7])
     const handler = ans.login
     console.log("Sending handler:", handler);
     console.log("please wait for a few seconds ...");
-    fetch("http://localhost:3000/handlerFullData", {
+    await fetch("http://localhost:3000/handlerFullData", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ handler })
@@ -108,12 +121,109 @@ async function login(){
     .then(response => {
         return response.json();
     })
-    /*.then(data => {
-        console.log(" Response:", data);
-    })*/
-    .catch(error => console.error("Error:", error));
+    .then(data => {
+        /*console.log(" Response:", data);*/
+    })
+    .catch(error => console.error("there was an error logging in:", error));
+
+    
+    const progressPath = "./data/progress.json";
+    const progressFile = await fs.readFile(progressPath, "utf-8");
+    const progress = JSON.parse(progressFile);
+    
+    const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
+    let recommendProblem = JSON.parse(recommendProblemFile);
+    recommendProblem = []
+    
+    const file3 = await readFile(cachePath , 'utf-8');
+    const cacheFile = JSON.parse(file3);
+
+    cacheFile.forEach(p =>{
+
+        
+        const strongTopics = Object.entries(progress.topicsSolved)
+        .sort((a, b) => b[1] - a[1]) // sort by count descending
+        .slice(0, 3); // take the top 3
+        //console.log("top 3 topics:", strongTopics);
+
+
+        const weakTopics = Object.entries(progress.topicsSolved)
+        .filter(([topic, attempts]) => attempts >= 3) // Ignore rare topics
+        .sort((a, b) => a[1] - b[1]) // sort by count descending
+        .slice(0, 3); // take the top 3
+        //console.log("weakest 3 topics:", weakTopics);
+        
+        var topicsPoints = 0
+        var topicsCounter = 0
+        var topicsSkillPoints = 0
+        if(p.tags){
+            p.tags.forEach(topic =>{
+                if(progress.topicsSolved[topic]){
+                    topicsPoints += progress.topicsSolved[topic]
+                }
+                topicsCounter ++
+            })
+            topicsSkillPoints = topicsPoints / topicsCounter
+        }
+        
+        const problem = {
+            problem_id: `${p.contestId}-${p.index}` ,
+            user_handler: progress.handler,
+            rating: p.rating ?? 0,
+            topics: p.tags ? p.tags.join(',') : ["none"], //make sure this is a string not an array
+            attempts: 0,
+            solved : false,
+            topicsSkill: topicsSkillPoints,
+            creationTime: undefined,
+            problem_ratingAvailable: p.rating && p.rating != 0 ? true : false,
+            problem_topicsAvailable: p.tags.length == 0 ? false : true,
+            user_currentRating: progress.current_rating,
+            user_maxRating: progress.maximum_rating,
+            user_successRate: parseFloat(Number(progress.successRate).toFixed(2)),
+            user_strongTopics: strongTopics.map(([topic]) => topic).join(';'),
+            user_weakTopics: weakTopics.map(([topic]) => topic).join(';'),
+            user_easy: progress.difficultyCount["Easy"],
+            user_medium: progress.difficultyCount["Medium"],
+            user_hard: progress.difficultyCount["Hard"],
+            user_ratingNotAvailable: progress.difficultyCount["undefined"],
+            prediction : 0
+        }
+        recommendProblem.push(problem)
+
+    })
+    await fs.writeFile(recommendProblemPath, JSON.stringify(recommendProblem, null, 4));
+    console.log("Problems formatted successfully! Sending response...");
+        
+    console.log("Problems formatted successfully!");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////makePrediction/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+    const scriptPath =path.join(__dirname, './ml/predict.py')
+
+
+    exec(`python ${scriptPath}`, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing script: ${error.message}`);
+            res.status(500).send('Error executing prediction script.');
+            return;
+        }
+        if (stderr) {
+            console.error(`Error output: ${stderr}`);
+            res.status(500).send('Prediction script ran with errors.');
+            return;
+        }
+        console.log(`Output: ${stdout}`);
+        console.log('Prediction script executed successfully!');
+    });
+
+    
     ask()
 }
+/*
 async function loadProblem(){
     try{
         const file = await readFile(filePath, 'utf-8');
@@ -150,24 +260,86 @@ async function loadProblem(){
         console.error(chalk.red("error getting file: ", error));
     }
 }
+
+*/
+
 async function goToLink(url){
     await open(url);
 }
+
 async function addProblem(){
-    try{
+
+
+    const progressPath = "./data/progress.json";
+    const progressFile = await fs.readFile(progressPath, "utf-8");
+    const progress = JSON.parse(progressFile);
+    
+    const recommendProblemFile = await fs.readFile(recommendProblemPath, "utf-8");
+    let recommendProblem = JSON.parse(recommendProblemFile);
+
+    const file3 = await readFile(cachePath , 'utf-8');
+    const cacheFile = JSON.parse(file3);
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////populatePrediction//////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    const predictionPath = "./data/predictions.json";
+    const predictionFile = await fs.readFile(predictionPath, "utf-8");
+    const prediction = JSON.parse(predictionFile);
+
+    for(let i=0 ; i<prediction.length ; i++){
+        recommendProblem[i].prediction = prediction[i]
+    }
+    recommendProblem.sort((a, b) => b.prediction - a.prediction);
+    await fs.writeFile(recommendProblemPath, JSON.stringify(recommendProblem, null, 4));
+
+    console.log("population completed successfully!");
+    
+    const problemsPath = './data/problems.json'
+    const file = await readFile(problemsPath , 'utf-8');
+    const problemsFile = JSON.parse(file);
+
+
         
-        const file = await readFile(filePath, 'utf-8');
-        const problems = JSON.parse(file);
+    const problemIds = new Set(problemsFile.map(problem => problem.problem_id));
+    //Filter recommendedProblems (between 0.6 and 0.7 and not attempted)
+
+    const filteredProblems = recommendProblem.filter(problem => 
+        problem.prediction >= 0.5 &&
+        problem.prediction <= 0.75 &&
+        !problemIds.has(problem.id)
+    );
+    
+    
+    const randomNumber = Math.floor(Math.random() * filteredProblems.length);
+    
+    console.log(filteredProblems[randomNumber])
+    
+/*
+       try {
+        console.log("Sending request...");
+        const response = await axios.get('http://localhost:3000/makePrediction');
+        console.log("Response received:", response.data);
+      } catch (error) {
+        console.error("Request failed:", error);  // This prints the full error object.
+        console.error("Error details:", error.toJSON ? error.toJSON() : error); // JSON-formatted error details.
+
+        //await axios.get("http://localhost:3000/makePrediction", { timeout: 60000 });
+        //await sleep(2000); // Wait 1 second before next request
+
+        try {
+            console.log("Sending request...");
+            const response = await axios.get('http://localhost:3000/populatePrediction');
+            console.log("Response received:", response.data);
+          } catch (error) {
+            console.error("Request failed:", error);  // This prints the full error object.
+            console.error("Error details:", error.toJSON ? error.toJSON() : error); // JSON-formatted error details.
+          }
+        //await axios.get("http://localhost:3000/populatePrediction", { timeout: 60000 });
+        //await sleep(7000); // Wait 1 second before next request*/
+        //let newProblem = await axios.post("http://localhost:3000/returnProblem", { timeout: 60000 });
         
-        await axios.get("http://localhost:3000/formatProblems", { timeout: 60000 });
-        await sleep(2000); // Wait 1 second before next request
-        await axios.get("http://localhost:3000/makePrediction", { timeout: 60000 });
-        await sleep(2000); // Wait 1 second before next request
-        await axios.get("http://localhost:3000/populatePrediction", { timeout: 60000 });
-        await sleep(7000); // Wait 1 second before next request*/
-        let newProblem = await axios.post("http://localhost:3000/returnProblem", { timeout: 60000 });
-        
-        console.log(newProblem.data)
+        //console.log(newProblem.data)
         /*
         console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
         console.log("ID:         " , newProblem.data.id);
@@ -210,11 +382,11 @@ async function addProblem(){
             if(sure.anotherOne == "No"){
                 ask();
             }
-        }*/
+        }
     }
     catch(error){
-        console.log("error adding new problem : " + error);
-    }
+        console.log("error adding new problem : " + error);*/
+    
 }
 
 //changes the solved status in the chosen problem
