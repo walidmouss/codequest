@@ -8,7 +8,7 @@ import gradient from 'gradient-string';
 import { json } from 'stream/consumers';
 import axios from 'axios';
 import open from 'open';
-
+import boxen from 'boxen';
 
 
 import fs from "fs/promises";
@@ -242,7 +242,6 @@ async function loadProblem(){
             console.log(chalk.cyan("Difficulty:       "), unsolvedProbs[i].rating == 0 ? "Rating not available" : unsolvedProbs[i].rating );
             console.log(chalk.green("URL:             "), `https://codeforces.com/contest/${contestId}/problem/${index}`);
             console.log(chalk.green("Topics:          "), unsolvedProbs[i].topics.length > 0 ? unsolvedProbs[i].topics : "No topics");
-            console.log(chalk.green("solvability:     "), unsolvedProbs[i].prediction);
 
             console.log("\n---------------------------------------------");
             i++;
@@ -324,9 +323,10 @@ async function addProblem(){
     console.log(chalk.bold(chalk.yellow("\nHere is your recommended problem:")));
     console.log("ID:                                     " , currProblem.problem_id);
     //console.log("Title:      " , newProblem.data.title);
-    console.log("Difficulty:                             " , currProblem.rating == 0 ? "Rating not available!" : currProblem.rating);
-    console.log("URL:                                    " , `https://codeforces.com/contest/${contestId}/problem/${index}`);
-    console.log("Problem topics:                         " , currProblem.topics.length > 0 ? currProblem.topics : "Topics not specified by website");
+    console.log("Difficulty:                " , currProblem.rating == 0 ? "Rating not available!" : currProblem.rating);
+    console.log("URL:                       " , `https://codeforces.com/contest/${contestId}/problem/${index}`);
+    console.log("Problem topics:            " , currProblem.topics.length > 0 ? currProblem.topics : "Topics not specified by website");
+    console.log("Solvability:               " , currProblem.prediction* 100 , "%" )
     console.log("\n");
     
     const attempt = await inquirer.prompt(questions[2])
@@ -353,7 +353,7 @@ async function addProblem(){
 
 //changes the solved status in the chosen problem
 
-async function solved (){
+async function solved(){
     try{
         // read and parse problems.json
         const file = await readFile(filePath , 'utf-8');
@@ -363,13 +363,13 @@ async function solved (){
         const file2 = await readFile(ProgressPath , 'utf-8');
         const progress = JSON.parse(file2);
 
-        console.log(chalk.underline(chalk.grey("note that the last problem id attempted was :" , problem[problem.length-1].id)));
+        console.log(chalk.underline(chalk.grey("note that the last problem id attempted was :" , problem[problem.length-1].problem_id)));
         console.log(chalk.magenta("To exit type 'exit' "));
         
         // what problem do you want to mark as solved
         const answer = await inquirer.prompt(questions[1]);
         const probid = answer.solved_mark  ;
-        const temp = await problem.find(p => p.id == answer.solved_mark);
+        const temp = await problem.find(p => p.problem_id == answer.solved_mark);
         if (!problem ) {
             console.log(chalk.red("Problem not found!"));
             solved();
@@ -413,31 +413,56 @@ async function solved (){
 
 async function progress(){
     try{
-    const file = await readFile(filePath, 'utf-8');
-    const problems = JSON.parse(file);
-    if (problems.length === 0) {
-        console.log(chalk.red("No problems found."));
-        return;
-    }
-    const solvedCount = await problems.filter(p => p.solved);
-    const easy = await solvedCount.filter(p => p.difficulty == "Easy").length;
-    const medium = await solvedCount.filter(p => p.difficulty == "Medium").length;
-    const hard = await solvedCount.filter(p => p.difficulty == "Hard").length;
-    const unsolvedCount = problems.length - solvedCount.length ;
 
-    console.log(`📊 Progress Report:  
-        total problems attempted ${problems.length}  
-        ❌ Unsolved: ${unsolvedCount}
-        ✅ Solved:   ${solvedCount.length}  
-        Here is the difficulty of problems solved
-        🟢 Easy: ${easy} | 🔵 Medium: ${medium} | 🔴 Hard: ${hard}`);
-    const answer = await inquirer.prompt(questions[5]);
-    if(answer.retry == "Yes"){
-        loadProblem();
-    }
-    else{
-        ask();
-    }
+        
+        // read and parse progress.json
+        const file2 = await readFile(ProgressPath , 'utf-8');
+        const progress = JSON.parse(file2);
+
+        const file = await readFile(filePath, 'utf-8');
+        const problems = JSON.parse(file);
+
+                // Create a formatted string for the progress
+        const progressText = `
+        ${chalk.bold.underline('Progress Report')}
+
+        ${chalk.green('Handler:')} ${chalk.cyan(progress.handler)}
+        ${chalk.green('Current Rating:')} ${chalk.yellow(progress.current_rating)}
+        ${chalk.green('Maximum Rating:')} ${chalk.yellow(progress.maximum_rating)}
+        ${chalk.green('Success Rate:')} ${chalk.yellow(progress.successRate *100+ '%')}
+        ${chalk.green('Total Problems Solved:')} ${chalk.yellow(progress.totalSolved)}
+
+        ${chalk.bold.green('Difficulty Count:')}
+        ${chalk.blue('Easy:')} ${chalk.yellow(progress.difficultyCount.Easy)}
+        ${chalk.blue('Medium:')} ${chalk.yellow(progress.difficultyCount.Medium)}
+        ${chalk.blue('Hard:')} ${chalk.yellow(progress.difficultyCount.Hard)}
+        ${chalk.blue('Undefined:')} ${chalk.yellow(progress.difficultyCount.undefined)}
+
+        ${chalk.bold.green('Topics Solved:')}
+        ${Object.entries(progress.topicsSolved).map(([topic, count]) => `${chalk.blue(topic)}: ${chalk.yellow(count)}`).join('\n')}
+
+        `;
+
+        const boxenOptions = {
+        padding: 1,
+        margin: 1,
+        borderStyle: 'round',
+        borderColor: 'cyan',
+        backgroundColor: 'black'
+        };
+
+        // Display the progress in a boxed layout
+        const boxedProgress = boxen(progressText, boxenOptions);
+        console.log(boxedProgress);
+
+
+        const answer = await inquirer.prompt(questions[5]);
+        if(answer.retry == "Yes"){
+            loadProblem();
+        }
+        else{
+            ask();
+        }
     } catch (error) {
         console.error(chalk.red("Error reading file:", error));
     }
