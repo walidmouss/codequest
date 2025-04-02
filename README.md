@@ -14,9 +14,9 @@ This project is a **Machine Learning tool designed to track and analyze your pro
 ## Technologies Used
 - **Node.js**
 - **Express.js**
-- **chalk** (for colored console output)
-- **boxen** (for creating boxed layouts)
-- **inquirer** (for interactive CLI)
+- **chalk**
+- **boxen**
+- **inquirer**
 
 ## Installation
 1. Clone the repository:
@@ -62,8 +62,8 @@ Greedy: 25
 
 ## To-Do
 - Implement automatic fetching of data from Codeforces API.
-- Enhance visual representation of progress (e.g., graphs).
-- Add support for more advanced analysis metrics.
+- Enhance visual representation of progress.
+- Proved machine learning enhanced problem recommendations.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
